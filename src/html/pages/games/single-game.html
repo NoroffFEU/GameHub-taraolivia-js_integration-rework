@@ -12,29 +12,22 @@
       type="image/x-icon"
       href="/assets/images/icons8/icons8-game-controller-96.png"
     />
-      <link rel="stylesheet" href="src/css/styles.css" />
+      <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <script defer src="/src/js/pages/single-game.mjs"></script>
+
     <script defer src="/src/js/components/breadcrumbs.mjs"></script>
     <script defer src="/src/js/components/game-image-gallery.mjs"></script>
-    <script defer src="/src/js/utilities/loading-indicator.mjs"></script>
     <script defer src="/src/js/components/game-info-tabs.mjs"></script>
     <script defer src="/src/js/components/faq.mjs"></script>
     <script defer src="/src/js/components/reviewCard.mjs"></script>
     <script defer src="/src/js/components/reviewsAnchorTag.mjs"></script>
-    <script defer src="/src/js/utilities/themeToggle.mjs"></script>
-    <script defer src="/src/js/components/cart.mjs"></script>
-    <script defer src="/src/js/services/apiHandler.mjs"></script>
-    <script defer src="/src/js/services/gameDisplay.mjs"></script>
     <script defer src="/src/js/utilities/gameFilter.mjs"></script>
-    <script defer src="/src/js/utilities/themeSwitcher.mjs"></script>
-    <script defer type="module" src="src/js/main.js"></script>
-
+    <script defer type="module" src="/src/js/main.js"></script>
 
   </head>
 
@@ -47,7 +40,7 @@
     <div id="loading-indicator">
       <div class="loader-container">
         <img
-          src="assets/images/loading-indicator/Wedges@1.25x-5.3s-200px-200px.gif"
+          src="/assets/images/loading-indicator/Wedges@1.25x-5.3s-200px-200px.gif"
           alt="Loading..."
           class="page-loader"
         />
@@ -135,15 +128,16 @@
 
     <div id="cart-overlay">
       <div id="cart-container">
-        <button class="close-cart-btn">×</button>
-        <h2>Your Cart</h2>
-        <ul id="cart-list">
-          <!-- Cart items will be dynamically added here -->
-        </ul>
-        <p><span id="cart-total"></span></p>
-        <button id="go-to-checkout-btn" class="button button--primary">Go to Checkout</button>
+          <button class="close-cart-btn">×</button>
+          <h2>Your Cart</h2>
+          <ul id="cart-list">
+              <!-- Cart items will be dynamically added here -->
+          </ul>
+          <p><span id="cart-total"></span></p>
+          <button id="go-to-checkout-btn" class="button button--primary">Go to Checkout</button>
       </div>
-    </div>
+  </div>
+  <div id="cartItemCount" style="display: none;">0</div>
 
     <!-- 2. Breadcrumbs -->
     <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -281,312 +275,192 @@
 
       <section class="main-content__section">
         <div class="spinner-container">
-          <img
-            src="assets/images/loading-indicator/Bean Eater@1.25x-1.0s-200px-200px (1).gif"
-            alt="Loading..."
-            class="spinner"
-          />
+            <img src="assets/images/loading-indicator/Bean Eater@1.25x-1.0s-200px-200px (1).gif" alt="Loading..." class="spinner" />
         </div>
         <div class="hidden-until-loaded">
-          <div class="game-page-top-wrapper">
-            <div class="gallery-container">
-              <!-- Main slideshow container -->
-              <div class="thumbnails-container">
-                <!-- Slides -->
-                <div class="mySlides">
-                  <img
-                    id="game-image"
-                    src="placeholder.jpg"
-                    alt="Game image"
-                    style="width: 100%"
-                  />
+            <div class="game-page-top-wrapper">
+                <div class="gallery-container">
+                    <!-- Main slideshow container -->
+                    <div class="thumbnails-container">
+                        <!-- Slides -->
+                        <div class="mySlides">
+                            <img id="game-image" src="placeholder.jpg" alt="Game image" style="width: 100%" />
+                        </div>
+                        <div class="mySlides">
+                            <img src="assets/images/games-main-pages/atlantis-2.png" style="width: 100%" />
+                        </div>
+                        <div class="mySlides">
+                            <img src="assets/images/games-main-pages/mythical-arts-2.png" style="width: 100%" />
+                        </div>
+                        <div class="mySlides">
+                            <img src="assets/images/games-main-pages/wildlife-2.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <!-- Caption Area -->
+                    <div class="caption-container">
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" id="api-thumbnail" src="placeholder.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Dynamic Image from API" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="assets/images/games-main-pages/atlantis-2.png" style="width: 100%" onclick="currentSlide(2)" alt="Atlantis" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="assets/images/games-main-pages/mythical-arts-2.png" style="width: 100%" onclick="currentSlide(3)" alt="Mythical Arts" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="assets/images/games-main-pages/wildlife-2.png" style="width: 100%" onclick="currentSlide(4)" alt="Wildlife" />
+                        </div>
+                    </div>
                 </div>
-                <div class="mySlides">
-                  <img
-                    src="assets/images/games-main-pages/atlantis-2.png"
-                    style="width: 100%"
-                  />
+                <div class="game-page-primary">
+                    <h1 id="game-title" class="game-page-text text-left"></h1>
+                    <h2 id="game-subtitle" class="game-page-text"></h2>
+                    <a href="#Reviews" class="game-brag" id="reviews-link">
+                        <img id="star" src="assets/images/icons8/icons8-star-64.png" alt="icon of a yellow star" />
+                        <p class="game-brag-text">4.9 - 528 reviews</p>
+                    </a>
+                    <a href="games.html">
+                        <div class="game-brag">
+                            <img id="controller" src="assets/images/icons8/icons8-game-controller-96.png" alt="icon of a videogame controller with pink background" />
+                            <p class="game-brag-text">Top 10 in games right now</p>
+                        </div>
+                    </a>
+                    <p id="game-price" class="game-page-text"></p>
+                    <button id="add-to-cart-btn" class="button--add_to_cart">
+                        <p>X</p>
+                    </button>
                 </div>
-                <div class="mySlides">
-                  <img
-                    src="assets/images/games-main-pages/mythical-arts-2.png"
-                    style="width: 100%"
-                  />
-                </div>
-                <div class="mySlides">
-                  <img
-                    src="assets/images/games-main-pages/wildlife-2.png"
-                    style="width: 100%"
-                  />
-                </div>
-              </div>
-
-              <!-- Caption Area -->
-              <div class="caption-container">
-                <p></p>
-              </div>
-
-              <div class="row">
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    id="api-thumbnail"
-                    src="placeholder.jpg"
-                    style="width: 100%"
-                    onclick="currentSlide(1)"
-                    alt="Dynamic Image from API"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="assets/images/games-main-pages/atlantis-2.png"
-                    style="width: 100%"
-                    onclick="currentSlide(2)"
-                    alt="Atlantis"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="assets/images/games-main-pages/mythical-arts-2.png"
-                    style="width: 100%"
-                    onclick="currentSlide(3)"
-                    alt="Mythical Arts"
-                  />
-                </div>
-                <div class="column">
-                  <img
-                    class="demo cursor"
-                    src="assets/images/games-main-pages/wildlife-2.png"
-                    style="width: 100%"
-                    onclick="currentSlide(4)"
-                    alt="Wildlife"
-                  />
-                </div>
-              </div>
             </div>
-
-            <div class="game-page-primary">
-              <h1 id="game-title" class="game-page-text text-left"></h1>
-              <h2 id="game-subtitle" class="game-page-text"></h2>
-
-              <a href="#Reviews" class="game-brag" id="reviews-link">
-                <img
-                  id="star"
-                  src="assets/images/icons8/icons8-star-64.png"
-                  alt="icon of a yellow star"
-                />
-                <p class="game-brag-text">4.9 - 528 reviews</p>
-              </a>
-
-              <a href="games.html">
-                <div class="game-brag">
-                  <img
-                    id="controller"
-                    src="assets/images/icons8/icons8-game-controller-96.png"
-                    alt="icon of a videogame controller with pink background"
-                  />
-                  <p class="game-brag-text">Top 10 in games right now</p>
+            <div class="tab-container">
+                <div class="tab-titles">
+                    <button class="tab-title active" onclick="openTab(event, 'About')">ABOUT</button>
+                    <button class="tab-title" onclick="openTab(event, 'Details')">DETAILS</button>
+                    <button class="tab-title" onclick="openTab(event, 'Compatibility')">COMPATIBILITY</button>
+                    <button class="tab-title" onclick="openTab(event, 'Reviews')">REVIEWS</button>
+                    <button class="tab-title" onclick="openTab(event, 'FAQ')">FAQ'S</button>
+                    <button class="tab-title" onclick="openTab(event, 'similar-games')">SIMILAR GAMES</button>
                 </div>
-              </a>
-
-              <p id="game-price" class="game-page-text"></p>
-
-              <button id="add-to-cart-btn" class="button--add_to_cart">
-                <p>X</p>
-              </button>
-            </div>
-          </div>
-
-          <div class="tab-container">
-            <div class="tab-titles">
-              <button
-                class="tab-title active"
-                onclick="openTab(event, 'About')"
-              >
-                ABOUT
-              </button>
-              <button class="tab-title" onclick="openTab(event, 'Details')">
-
-                DETAILS
-              </button>
-              <button
-                class="tab-title"
-                onclick="openTab(event, 'Compatibility')"
-              >
-                COMPATIBILITY
-              </button>
-              <button class="tab-title" onclick="openTab(event, 'Reviews')">
-                REVIEWS
-              </button>
-              <button class="tab-title" onclick="openTab(event, 'FAQ')">
-                FAQ'S
-              </button>
-              <button
-                class="tab-title"
-                onclick="openTab(event, 'similar-games')"
-              >
-                SIMILAR GAMES
-              </button>
-            </div>
-            <div id="About" class="tab-content active">
-              <p id="game-description"></p>
-            </div>
-
-            <div id="Details" class="tab-content game-details">
-              <table>
-                <tr>
-                  <th>Age Rating</th>
-                  <td><span id="game-age-rating"></span></td>
-                </tr>
-                <tr>
-                  <th>Genre</th>
-                  <td><span id="game-genre"></span></td>
-                </tr>
-                <tr>
-                  <th>Released</th>
-                  <td><span id="game-released"></span></td>
-                </tr>
-              </table>
-            </div>
-
-
-            <div id="Compatibility" class="tab-content">
-              <h3>System Requirements</h3>
-              <table>
-                <caption>Minimum System Requirements</caption>
-                <tr>
-                  <th>Operating System</th>
-                  <td>Windows 10, macOS 10.14</td>
-                </tr>
-                <tr>
-                  <th>Processor</th>
-                  <td>Intel Core i5 or AMD equivalent</td>
-                </tr>
-                <tr>
-                  <th>Memory</th>
-                  <td>8 GB RAM</td>
-                </tr>
-                <tr>
-                  <th>Graphics</th>
-                  <td>NVIDIA GTX 960 or AMD Radeon R9 280</td>
-                </tr>
-                <tr>
-                  <th>Storage</th>
-                  <td>50 GB available space</td>
-                </tr>
-                <tr>
-                  <th>Additional Notes</th>
-                  <td>Requires a mouse and keyboard; game controllers are supported but not required.</td>
-                </tr>
-              </table>
-              
-              <table>
-                <caption>Recommended System Requirements</caption>
-                <tr>
-                  <th>Operating System</th>
-                  <td>Windows 10 or higher, macOS 10.15 or higher</td>
-                </tr>
-                <tr>
-                  <th>Processor</th>
-                  <td>Intel Core i7 or AMD Ryzen 7</td>
-                </tr>
-                <tr>
-                  <th>Memory</th>
-                  <td>16 GB RAM</td>
-                </tr>
-                <tr>
-                  <th>Graphics</th>
-                  <td>NVIDIA GTX 1060 or AMD Radeon RX 580</td>
-                </tr>
-                <tr>
-                  <th>Storage</th>
-                  <td>70 GB available space on SSD</td>
-                </tr>
-                <tr>
-                  <th>Additional Notes</th>
-                  <td>SSD recommended for faster loading times; HDR display supported.</td>
-                </tr>
-              </table>
-            </div>
-            <div id="Reviews" class="tab-content">
-              <div id="review-cards-container">
-                <div class="review-header">
-                  <div class="review-icon"></div>
-
-                  <h3 class="review-name"></h3>
+                <div id="About" class="tab-content active">
+                    <p id="game-description"></p>
                 </div>
-                <div class="review-stars"></div>
-
-                <p class="review-text"></p>
-              </div>
-
-              <!-- Button to show more reviews -->
-              <button id="show-more-btn" class="button button--secondary">Show More</button>
+                <div id="Details" class="tab-content game-details">
+                    <table>
+                        <tr>
+                            <th>Age Rating</th>
+                            <td><span id="game-age-rating"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Genre</th>
+                            <td><span id="game-genre"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Released</th>
+                            <td><span id="game-released"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="Compatibility" class="tab-content">
+                    <h3>System Requirements</h3>
+                    <table>
+                        <caption>Minimum System Requirements</caption>
+                        <tr>
+                            <th>Operating System</th>
+                            <td>Windows 10, macOS 10.14</td>
+                        </tr>
+                        <tr>
+                            <th>Processor</th>
+                            <td>Intel Core i5 or AMD equivalent</td>
+                        </tr>
+                        <tr>
+                            <th>Memory</th>
+                            <td>8 GB RAM</td>
+                        </tr>
+                        <tr>
+                            <th>Graphics</th>
+                            <td>NVIDIA GTX 960 or AMD Radeon R9 280</td>
+                        </tr>
+                        <tr>
+                            <th>Storage</th>
+                            <td>50 GB available space</td>
+                        </tr>
+                        <tr>
+                            <th>Additional Notes</th>
+                            <td>Requires a mouse and keyboard; game controllers are supported but not required.</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <caption>Recommended System Requirements</caption>
+                        <tr>
+                            <th>Operating System</th>
+                            <td>Windows 10 or higher, macOS 10.15 or higher</td>
+                        </tr>
+                        <tr>
+                            <th>Processor</th>
+                            <td>Intel Core i7 or AMD Ryzen 7</td>
+                        </tr>
+                        <tr>
+                            <th>Memory</th>
+                            <td>16 GB RAM</td>
+                        </tr>
+                        <tr>
+                            <th>Graphics</th>
+                            <td>NVIDIA GTX 1060 or AMD Radeon RX 580</td>
+                        </tr>
+                        <tr>
+                            <th>Storage</th>
+                            <td>70 GB available space on SSD</td>
+                        </tr>
+                        <tr>
+                            <th>Additional Notes</th>
+                            <td>SSD recommended for faster loading times; HDR display supported.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="Reviews" class="tab-content">
+                    <div id="review-cards-container">
+                        <div class="review-header">
+                            <div class="review-icon"></div>
+                            <h3 class="review-name"></h3>
+                        </div>
+                        <div class="review-stars"></div>
+                        <p class="review-text"></p>
+                    </div>
+                    <!-- Button to show more reviews -->
+                    <button id="show-more-btn" class="button button--secondary">Show More</button>
+                </div>
+                <div id="FAQ" class="tab-content">
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="question">Q: Can I play this game on a laptop?</div>
+                            <div class="answer">A: Yes, as long as your laptop meets the minimum system requirements listed in the Compatibility tab.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">Q: Is an internet connection required?</div>
+                            <div class="answer">A: An internet connection is not required to play the game in single-player mode. However, updates and multiplayer modes will require an internet connection.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">Q: Are there any age restrictions for this game?</div>
+                            <div class="answer">A: Please find the age restriction under the tab "Details"</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">Q: Can I get a refund if the game doesn't work on my computer?</div>
+                            <div class="answer">A: Refunds are available within 14 days of purchase if the game has technical issues that cannot be resolved. Ensure your system meets the requirements listed on the Compatibility tab.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">Q: How do I install the game after purchasing?</div>
+                            <div class="answer">A: After purchase, you can download the game directly from your account. Detailed installation instructions are provided with your purchase confirmation.</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="similar-games" class="tab-content">
+                    <div id="similar-games-container" class="similar-games-container"></div>
+                </div>
             </div>
-            <div id="FAQ" class="tab-content">
-              <div class="faq-container">
-                <div class="faq-item">
-                  <div class="question">
-                    Q: Can I play this game on a laptop?
-                  </div>
-                  <div class="answer">
-                    A: Yes, as long as your laptop meets the minimum system
-                    requirements listed in the Compatibility tab.
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="question">
-                    Q: Is an internet connection required?
-                  </div>
-                  <div class="answer">
-                    A: An internet connection is not required to play the game
-                    in single-player mode. However, updates and multiplayer
-                    modes will require an internet connection.
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="question">
-                    Q: Are there any age restrictions for this game?
-                  </div>
-                  <div class="answer">
-                    A: Please find the age restriction under the tab "Details"
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="question">
-                    Q: Can I get a refund if the game doesn't work on my
-                    computer?
-                  </div>
-                  <div class="answer">
-                    A: Refunds are available within 14 days of purchase if the
-                    game has technical issues that cannot be resolved. Ensure
-                    your system meets the requirements listed on the
-                    Compatibility tab.
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="question">
-                    Q: How do I install the game after purchasing?
-                  </div>
-                  <div class="answer">
-                    A: After purchase, you can download the game directly from
-                    your account. Detailed installation instructions are
-                    provided with your purchase confirmation.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="similar-games" class="tab-content">
-            <div
-              id="similar-games-container"
-              class="similar-games-container"
-            ></div>
-          </div>
         </div>
-      </section>
+    </section>
       <div class="decorative-line"></div>
       <div class="info-icons-wrapper">
         <div class="info-icons">

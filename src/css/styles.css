@@ -145,9 +145,6 @@ input::placeholder {
   opacity: 1;
 }
 
-input::-ms-input-placeholder { /* Microsoft Edge */
-  color: #888;
-}
 
 .payment-info form a {
   padding: 10px 20px;
@@ -200,7 +197,6 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     max-height: 850px;
     overflow-x: scroll;
     overflow-y: scroll;
-    scrollbar-width: 50px;
     align-content: flex-start;
     top: 97px;
     z-index: 10000;
@@ -295,79 +291,6 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 #cart-overlay.visible {
   display: block;
-}
-
-.toggle-container {
-display: flex;
-column-gap: 1em;
-margin-right: 1em;
-justify-content: center;
-align-items: center;
-}
-
-.toggle-handle {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 35px;
-  border-radius: 20px;
-  cursor: pointer;
-  overflow: visible;
-  margin-right: 1em;
-}
-
-.dark-mode-icon,
-.light-mode-icon {
-  position: absolute;
-  transition: transform 1s ease, opacity 0.6s ease 0.1s;
-}
-
-.dark-mode-icon {
-  top: -6px;
-  left: 37px;
-  transform: translateX(-100%);
-  opacity: 0;
-  width: 48px;
-  height: 48px;
-}
-
-.light-mode-icon {
-  top: -15px;
-  left: -15px;
-  width: 65px;
-  height: 65px;
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.toggle-checkbox:checked + .toggle-label .dark-mode-icon {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.toggle-checkbox:checked + .toggle-label .light-mode-icon {
-  transform: translateX(100%);
-  opacity: 0;
-}
-
-.toggle-checkbox {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.toggle-checkbox:checked + .toggle-label .toggle-handle {
-  background-color: #402a69;
-}
-
-.toggle-checkbox + .toggle-label .toggle-handle {
-  background-color: #ad9cc5;
-}
-
-.no-transition,
-.no-transition * {
-  transition: none !important;
 }
 
 .review-card {

@@ -1,3 +1,4 @@
+// loading-indicator.mjs
 export function showSpinner() {
   const spinner = document.querySelector(".spinner-container");
   if (spinner) {
@@ -11,7 +12,7 @@ export function hideSpinner() {
   const spinner = document.querySelector(".spinner-container");
   if (spinner) {
     spinner.style.display = "none";
-    showGameContent(); 
+    showGameContent();
   } else {
     console.error("Spinner container not found.");
   }
