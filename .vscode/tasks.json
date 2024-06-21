@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Update loading-indicator.js path in HTML",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-Command",
+          "Get-ChildItem -Recurse -Filter '*.html' | ForEach-Object { $content = Get-Content -Path $_.FullName; $newContent = $content -replace 'loading-indicator\\.js', './src/js/utilities/loading-indicator.js'; Set-Content -Path $_.FullName -Value $newContent }"
+        ],
+        "problemMatcher": []
+      }
+    ]
+  }
+  

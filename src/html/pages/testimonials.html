@@ -4,29 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Curl up with Game Hub's cozy winter games. From eco-adventures to mystical puzzles, find heartwarming titles for chilly nights." />
+  <meta name="description" content="Read testimonials from Game Hubs diverse
+    gaming community. Your satisfaction and stories inspire our growth and
+    dedication." />
     <link rel="icon" type="image/x-icon" href="/assets/images/icons8/icons8-game-controller-96.png" />
     <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="./themeSwitcherTest/color-theme.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Press+Start+2P&display=swap"
     rel="stylesheet" />
-  <title>The coziest games to play this winter | Game Hub</title>
-  <script defer src="javascript.js"></script>
-  <script defer src="single-game.js"></script>
-  <script defer src="breadcrumbs.js"></script>
-  <script defer src="game-image-gallery.js"></script>
-  <script defer src="loading-indicator.js"></script>
-  <script defer src="game-info-tabs.js"></script>
-  <script defer src="faq.js"></script>
-  <script defer src="reviewCard.js"></script>
-  <script defer src="reviewsAnchorTag.js"></script>
-  <script defer src="themeToggle.js"></script>
-  <script defer src="gameFilter.js"></script>
-  <script defer src="cart.js"></script>
-    <script defer src="./themeSwitcherTest/themeSwitcherTest.js"></script>
+  <title>Testimonials | Game Hub</title>
+
+  <script defer src="/src/js/pages/single-game.mjs"></script>
+  <script defer src="/src/js/components/breadcrumbs.mjs"></script>
+  <script defer src="/src/js/components/game-image-gallery.mjs"></script>
+  <script defer src="/src/js/utilities/loading-indicator.mjs"></script>
+  <script defer src="/src/js/components/game-info-tabs.mjs"></script>
+  <script defer src="/src/js/components/faq.mjs"></script>
+  <script defer src="/src/js/components/reviewCard.mjs"></script>
+  <script defer src="/src/js/components/reviewsAnchorTag.mjs"></script>
+  <script defer src="/src/js/utilities/themeToggle.mjs"></script>
+  <script defer src="/src/js/components/cart.mjs"></script>
+  <script defer src="/src/js/services/apiHandler.mjs"></script>
+  <script defer src="/src/js/services/gameDisplay.mjs"></script>
+  <script defer src="/src/js/utilities/gameFilter.mjs"></script>
+  <script defer src="/src/js/utilities/themeSwitcher.mjs"></script>
+  <script defer type="module" src="src/js/main.js"></script>
 
 
 </head>
@@ -266,90 +269,249 @@
     </button>
   </nav>
 
+    <div id="cart-overlay">
+      <div id="cart-container">
+        <button class="close-cart-btn">×</button>
+        <h2>Your Cart</h2>
+        <ul id="cart-list">
+          <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p><span id="cart-total"></span></p>
+        <button id="go-to-checkout-btn" class="button button--primary">Go to Checkout</button>
+      </div>
+    </div>
+
+  <!-- 2. Page Header -->
   <header class="header">
     <div class="header__content">
-      <h1>The Coziest Games to Play This Winter</h1>
+      <h1>TESTIMONIALS</h1>
       <h2 class="header__subtitle">
-        As the nights draw in and the temperature drops, it's time to cozy up
-        with some of the warmest and most heartwarming games of the season.
-        Whether you're looking to escape into a world of eco-friendly bliss,
-        mix elements for mystical results, or care for adorable animals, these
-        titles will warm your heart even on the coldest winter days.
+        At Game Hub, your experiences, stories, and feedback not only inspire us but also shape the way we grow and
+        evolve. Your satisfaction is our ultimate quest.
       </h2>
     </div>
   </header>
 
   <!-- 3. Main Content -->
-  <main>
-    <div class="blog-post-section">
-      <article class="blog-post">
-        <h3 class="text-left">Wildlife Wonderlands</h3>
-        <p class="blog-post-p">
-          "Wildlife Wonderlands" is a balm for the soul, perfect for animal
-          lovers and those who dream of a quiet life in the countryside.
-          Inherit the "Animal Haven Retreat," and immerse yourself in the
-          daily joys of animal care. This game offers a gentle, rhythmic
-          experience of nurturing creatures great and small. Expand the
-          sanctuary, build cozy shelters, and bond with each animal. The more
-          love you give, the more your haven thrives, creating a heartwarming
-          sense of community that's just right for the season of giving.
-        </p>
-        <img class="blog-post-image" src="assets/images/games-main-pages/wildlife-2.png" alt="" />
-        <a href="pixel-heart.html" class="button button--primary">discover</a>
-        <h3 class="text-left">Eco-Resort Paradise</h3>
-        <p class="blog-post-p">
-          Escape the winter chill and transport yourself to a serene world
-          where sustainability and luxury go hand in hand. In "Eco-Resort
-          Paradise," players become the architects of their own
-          environmentally-friendly retreat. Nestled in the heart of nature,
-          this game invites you to design and manage a beautiful resort town
-          where every detail, from the solar panels down to the recycled wood
-          furniture, reflects your commitment to the planet. Watch as your
-          paradise flourishes, and bask in the virtual sunshine that your
-          eco-conscious choices bring to your guests.
-        </p>
-        <img class="blog-post-image" src="assets/images/blog/blog-post-2/eco-resort-2.webp"
-          alt="Lush eco-resort with green landscapes, eco-friendly buildings, and a lake." />
-        <a href="pixel-heart.html" class="button button--primary">discover</a>
-        <h3 class="text-left">Elemental Alchemy</h3>
-        <p class="blog-post-p">
-          For those who like to engage their minds while relaxing by the fire,
-          "Elemental Alchemy" offers a blend of puzzle-solving and magic. This
-          enchanting game challenges you to combine different elemental
-          symbols, invoking the ancient art of alchemy. Each combination you
-          discover leads to new elements and further mysteries to unfold. With
-          its soothing soundtrack and visually relaxing aesthetics, "Elemental
-          Alchemy" is the perfect game to lose yourself in on a snowy evening.
-        </p>
-        <img class="blog-post-image" src="assets/images/blog/blog-post-2/fantasy-castle.webp"
-          alt="Bustling fantasy world with magical castles, mythical creatures, and an enchanted forest landscape." />
-        <a href="pixel-heart.html" class="button button--primary">discover</a>
-        <p class="blog-post-p">
-          These games promise not just entertainment but a soothing balm for
-          the winter blues. So grab your favorite blanket, a hot beverage, and
-          settle in for a winter gaming experience that will leave you feeling
-          relaxed and rejuvenated.
-        </p>
-      </article>
-
-      <aside class="aside">
-        <div class="aside__content">
-          <div class="aside__content-text">
-            <p>Published January 13, 2024</p>
-            <p>Author: Lucky</p>
-          </div>
-
-          <img src="assets/images/about-us/4.jpg" alt="AI-created poodle with a light brown fur coat, wearing gaming headphones with a mic, sitting at a computer desk with a keyboard, screen displaying a game in the background." />
+  <main class="main-content">
+    <div class="testimonials-wrap">
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-1.png" alt="" />
         </div>
-      </aside>
+        <div class="testimonial-card-text">
+          <p>
+            "As a casual gamer, I've always looked for a one-stop shop for all
+            my gaming needs. Game Hub has been a game-changer! Whether I'm
+            buying the latest release or selling a game I've conquered, Game
+            Hub makes it seamless and fun!"
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-2.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "Love Game Hub! It's so welcoming, even for us gamer girls, since
+            they've got everything from cute, cozy games to the big
+            blockbusters. Seriously, this place gets it 😊"
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-3.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "As a parent, finding age-appropriate games for my kids can be a
+            hassle, but Game Hub makes it easy. The staff is super helpful in
+            recommending games that are fun and family-friendly. A big thumbs
+            up from this mom!"
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-4.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "Shopped at Game Hub for the first time last week, and I was
+            impressed. The web-site is well-organized, the staff is friendly,
+            and the prices are competitive. It's rare to find a game store
+            that hits all the right notes like this."
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-5.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "As someone with a hectic schedule, I appreciate how quick and
+            easy it is to shop at Game Hub. Their website is user-friendly,
+            and I always find what I need fast. It’s the perfect place for
+            busy bees like me to get our gaming fix!"
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-6.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "I have a soft spot for classic games, and Game Hub has an amazing
+            retro section. Finding old favorites and discovering new ones from
+            past generations is a blast. This place is a treasure trove for
+            retro gamers like me."
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-7.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "The Game Hub blog is a fantastic extension of their store. The
+            articles are always engaging, whether they're deep-diving into
+            gaming strategies or offering sneak peeks at upcoming releases.
+            The quizzes add a fun, interactive element too!”
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-8.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "For someone who loves multiplayer games, Game Hub is the spot.
+            Their community events and wide range of multiplayer titles have
+            introduced me to so many fellow gamers. It's become my go-to place
+            for both games and gaming friends."
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-9.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "I'm not a hardcore gamer, but I love unwinding with a good game.
+            Game Hub has good vibes and a great selection of casual games.
+            It's nice to shop somewhere that caters to all types of gamers."
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-11.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "Stumbled upon Game Hub when looking for affordable gaming
+            options, and I'm so glad I did! Great prices, and their trade-in
+            deals are a lifesaver for my wallet.”
+          </p>
+        </div>
+      </div>
     </div>
+
+    <div id="show-more-cards" class="show-more-cards">
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-10.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "I came. I saw. I bought a video game. Then I sold an old one.
+            Efficient, straightforward, no fuss. Game Hub gets the job done.
+            Would I recommend it? Yes. Am I excited about it? That's
+            irrelevant. But I'll be back. Enough said."
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-12.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "I've been to Game Hub and let me tell you, it’s no ordinary
+            store. They’ve got games I’ve never even heard of – it’s like they
+            know what we want before we do, I'm onto them. Keeping my eye on
+            you, Game Hub. You can't fool me!"
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-1.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "In the ever-flowing river of time, Game Hub stands as a testament
+            to the eternal cycle of gaming. Here, amidst the pixels and
+            polygons, one contemplates the deeper meaning of 'high score'.
+            Game Hub, you are not just a store; you are a digital Zen garden."
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-card-icon">
+          <img src="assets/images/testimonials/testimonial-5.png" alt="" />
+        </div>
+        <div class="testimonial-card-text">
+          <p>
+            "Greetings from 1995! I stumbled upon this mystical portal called
+            Game Hub and, lo and behold, games from the future! Mind-blowing
+            graphics, stories that defy space and time – it’s like I’ve
+            entered another dimension! Sold a few 'retro' games from my era,
+            and the folks here treated them like precious artifacts.Now, if
+            only I could find my way back..."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#show-more-cards" id="show-more-button" class="button button--primary">Show more</a>
   </main>
 
   <!-- 4. Blog Carousel -->
   <section class="blog-carousel">
-    <h2>More from Our Blog</h2>
+    <h2>From Our Blog</h2>
 
     <div class="blog-carousel-wrap">
+      <a href="blog-post-1.html">
+        <div class="blog-card">
+          <img
+            alt="A girl is sitting in front of a computer in a room with plushies and a neon sign that reads “the coziest games to play this fall”."
+            class="blog-image" src="assets/images/blog/cozy.png" />
+          <h3 class="blog-post-title">
+            The coziest games to play this winter
+          </h3>
+        </div>
+      </a>
+
       <a href="blog-post-2.html">
         <div class="blog-card">
           <img alt="Neon colors and various gaming consoles under text that reads what type of gamer are you?"
@@ -357,7 +519,7 @@
           <h3 class="blog-post-title">QUIZ: What type of gamer are you?</h3>
         </div>
       </a>
-      <a href="blog-post-1.html">
+      <a href="blog-post-2.html">
         <div class="blog-card">
           <img alt="text reading hot new releases this week surrounded by gaming consoles, video game covers and fire. "
             class="blog-image" src="assets/images/blog/hot.png" />
@@ -367,8 +529,9 @@
     </div>
 
     <a href="blog.html" class="button button--blog">read blog</a>
-    <div class="decorative-line"></div>
   </section>
+
+
 
   <!-- 5. Footer -->
   <footer class="footer">

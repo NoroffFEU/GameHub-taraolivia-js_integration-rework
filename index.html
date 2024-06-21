@@ -13,24 +13,28 @@
       type="image/x-icon"
       href="/GameHub-taraolivia-js_integration/assets/images/icons8/icons8-game-controller-96.png"
     />
-      <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="./themeSwitcherTest/color-theme.css">    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <script defer src="javascript.js"></script>
-    <script defer src="single-game.js"></script>
-    <script defer src="breadcrumbs.js"></script>
-    <script defer src="game-image-gallery.js"></script>
-    <script defer src="loading-indicator.js"></script>
-    <script defer src="game-info-tabs.js"></script>
-    <script defer src="faq.js"></script>
-    <script defer src="reviewCard.js"></script>
-    <script defer src="reviewsAnchorTag.js"></script>
-    <script defer src="themeToggle.js"></script>
-    <script defer src="cart.js"></script>
+    <script defer src="/src/js/pages/single-game.mjs"></script>
+    <script defer src="/src/js/components/breadcrumbs.mjs"></script>
+    <script defer src="/src/js/components/game-image-gallery.mjs"></script>
+    <script defer src="/src/js/utilities/loading-indicator.mjs"></script>
+    <script defer src="/src/js/components/game-info-tabs.mjs"></script>
+    <script defer src="/src/js/components/faq.mjs"></script>
+    <script defer src="/src/js/components/reviewCard.mjs"></script>
+    <script defer src="/src/js/components/reviewsAnchorTag.mjs"></script>
+    <script defer src="/src/js/utilities/themeToggle.mjs"></script>
+    <script defer src="/src/js/components/cart.mjs"></script>
+    <script defer src="/src/js/services/apiHandler.mjs"></script>
+    <script defer src="/src/js/services/gameDisplay.mjs"></script>
+    <script defer src="/src/js/utilities/gameFilter.mjs"></script>
+    <script defer src="/src/js/utilities/themeSwitcher.mjs"></script>
+    <script defer type="module" src="src/js/main.js"></script>
 
   </head>
 
@@ -84,7 +88,7 @@
 
           <!-- Hamburger Menu Specific Links (Hidden by default) -->
           <ul class="navbar__hamburger-links">
-            <li><a href="games.html">Games</a></li>
+            <li><a href="../src/html/pages/games/games.html">Games</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about-us.html">About</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
@@ -116,17 +120,19 @@
 
           <ul class="navbar__hero-list">
             <li class="navbar__hero-list-item">
-              <a href="games.html">Games</a>
-            </li>
-            <li class="navbar__hero-list-item"><a href="blog.html">Blog</a></li>
-            <li class="navbar__hero-list-item">
-              <a href="about-us.html">About</a>
+              <a href="/src/html/pages/games/games.html">Games</a>
             </li>
             <li class="navbar__hero-list-item">
-              <a href="testimonials.html">Testimonials</a>
+              <a href="/src/html/pages/blog/blog.html">Blog</a>
             </li>
             <li class="navbar__hero-list-item">
-              <a href="contact.html">Contact</a>
+              <a href="/src/html/pages/about-us.html">About</a>
+            </li>
+            <li class="navbar__hero-list-item">
+              <a href="/src/html/pages/testimonials.html">Testimonials</a>
+            </li>
+            <li class="navbar__hero-list-item">
+              <a href="/src/html/pages/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -141,7 +147,9 @@
     <main>
       <div class="game-of-the-month">
         <div class="main-content__section">
-          <a href="games.html" class="button button--secondary button--start">START</a>
+          <a href="games.html" class="button button--secondary button--start"
+            >START</a
+          >
 
           <p class="hero__description">
             By gamers, for gamers.
@@ -243,7 +251,6 @@
       </div>
 
       <a href="blog.html" class="button button--blog">read blog</a>
-
     </section>
 
     <!-- 5. Footer -->
@@ -443,10 +450,5 @@
         <p>© 2024 Game Hub. All rights reserved.</p>
       </div>
     </footer>
-
-    <script defer src="gameFilter.js"></script>
-    <script defer src="breadcrumbs.js"></script>
-    <script defer src="loading-indicator.js"></script>
-    <script defer src="javascript.js"></script>
   </body>
 </html>

@@ -5,34 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Checkout"
+      content="Experience Game Hubs selection of top games from every genre. Discover your next favorite title in our expertly curated list."
     />
     <link
       rel="icon"
       type="image/x-icon"
       href="/assets/images/icons8/icons8-game-controller-96.png"
     />
-          <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="./themeSwitcherTest/color-theme.css">    <link rel="stylesheet" href="./themeSwitcherTest/color-theme.css">    <link rel="stylesheet" href="./themeSwitcherTest/color-theme.css">    <link rel="stylesheet" href="game-image-gallery.css" />
+      <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <script defer src="javascript.js"></script>
-    <script defer src="single-game.js"></script>
-    <script defer src="breadcrumbs.js"></script>
-    <script defer src="game-image-gallery.js"></script>
-    <script defer src="loading-indicator.js"></script>
-    <script defer src="game-info-tabs.js"></script>
-    <script defer src="faq.js"></script>
-    <script defer src="reviewCard.js"></script>
-    <script defer src="reviewsAnchorTag.js"></script>
-    <script defer src="themeToggle.js"></script>
-    <script defer src="gameFilter.js"></script>
-    <script defer src="cart.js"></script>
-      <script defer src="./themeSwitcherTest/themeSwitcherTest.js"></script>
+    <title>Games | Game Hub</title>
+    <script defer src="/src/js/pages/single-game.mjs"></script>
+    <script defer src="/src/js/components/breadcrumbs.mjs"></script>
+    <script defer src="/src/js/components/game-image-gallery.mjs"></script>
+    <script defer src="/src/js/components/game-info-tabs.mjs"></script>
+    <script defer src="/src/js/components/faq.mjs"></script>
+    <script defer src="/src/js/components/reviewCard.mjs"></script>
+    <script defer src="/src/js/components/reviewsAnchorTag.mjs"></script>
+    <script defer src="/src/js/utilities/gameFilter.mjs"></script>
+    <script defer type="module" src="/src/js/main.js"></script>
 
 
   </head>
@@ -272,71 +268,93 @@
       </button>
     </nav>
 
+    <!-- 2. Page Header -->
+    <header class="header">
+      <div class="header__content">
+        <h1>OUR GAMES</h1>
+        <h2 class="header__subtitle">
+          Discover a handpicked selection of games, where each category is
+          represented by a single, stellar title that promises to deliver the
+          best of its realm.
+        </h2>
+      </div>
+    </header>
+
     <!-- 3. Main Content -->
     <main>
-      <section class="main-content__section">
-        <div class="spinner-container">
-          <img
-            src="assets/images/loading-indicator/Bean Eater@1.25x-1.0s-200px-200px (1).gif"
-            alt="Loading..."
-            class="spinner"
-          />
+      <div class="main-content__section">
+
+      <div class="spinner-container">
+        <img
+          src="assets/images/loading-indicator/Bean Eater@1.25x-1.0s-200px-200px (1).gif"
+          alt="Loading..."
+          class="spinner"
+        />
+      </div>
+      <div class="hidden-until-loaded">
+        <!-- Genre Buttons Container -->
+        <div id="genre-buttons">
+          <!-- Buttons will be dynamically added here -->
         </div>
-        <div class="hidden-until-loaded">
 
-            <h1>Checkout</h1>
-
-            <div class="checkout-wrapper">
-            <div id="checkout-cart-container">
-              <h3>Order Summary</h3>
-                <ul id="checkout-cart-list">
-                </ul>
-                <p><span id="checkout-cart-total">0</span></p>
-            </div>
-
-            <div class="payment-info">
-              <form>
-                <h3>Payment Information</h3>
-                <div class="form-group">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Luxanna Crownguard">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="LadyofLuminosity@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="cardNumber">Card Number:</label>
-                    <input type="text" id="cardNumber" name="cardNumber" title="Card number should be 16 digits" placeholder="1234 5678 9101 1121">
-                </div>
-                <div class="form-group">
-                    <label for="expiry">Expiry Date:</label>
-                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
-                </div>
-                <div class="form-group">
-                    <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" name="cvv"  title="CVV should be 3 digits" placeholder="123">
-                </div>
-                <a href="checkout-success.html">
-                    Confirm Order </a>
-            </form>
-            </div>
-
-
-            </div>
-
-
-
+        <div class="trending-games-wrap" id="all-games-container">
+          <!-- Game cards will be appended here -->
         </div>
-      </section>
+      </div>
+    </div>
+
     </main>
+
+    <!-- 4. Blog Carousel -->
+    <section class="blog-carousel">
+      <h2>From Our Blog</h2>
+
+      <div class="blog-carousel-wrap">
+        <a href="blog-post-1.html">
+          <div class="blog-card">
+            <img
+              alt="A girl is sitting in front of a computer in a room with plushies and a neon sign that reads “the coziest games to play this fall”."
+              class="blog-image"
+              src="assets/images/blog/cozy.png"
+            />
+            <h3 class="blog-post-title">
+              The coziest games to play this winter
+            </h3>
+          </div>
+        </a>
+
+        <a href="blog-post-2.html">
+          <div class="blog-card">
+            <img
+              alt="Neon colors and various gaming consoles under text that reads what type of gamer are you?"
+              class="blog-image"
+              src="assets/images/blog/quiz.png"
+            />
+            <h3 class="blog-post-title">QUIZ: What type of gamer are you?</h3>
+          </div>
+        </a>
+        <a href="blog-post-1.html">
+          <div class="blog-card">
+            <img
+              alt="text reading hot new releases this week surrounded by gaming consoles, video game covers and fire. "
+              class="blog-image"
+              src="assets/images/blog/hot.png"
+            />
+            <h3 class="blog-post-title">HOT new releases this week</h3>
+          </div>
+        </a>
+      </div>
+
+      <a href="blog.html" class="button button--blog">read blog</a>
+
+    </section>
 
     <!-- 5. Footer -->
     <footer class="footer">
       <nav class="footer__nav">
         <ul class="footer__nav-links">
           <div class="footer__nav-links-division">
-            <li><a href="games.html">Games</a></li>
+            <li class="active"><a href="games.html">Games</a></li>
             <li><a href="blog.html">Blog</a></li>
           </div>
 
@@ -528,5 +546,6 @@
         <p>© 2024 Game Hub. All rights reserved.</p>
       </div>
     </footer>
+
   </body>
 </html>
