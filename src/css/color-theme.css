@@ -48,61 +48,63 @@ html[data-theme="light"] {
   --color-5: #b8a6cc; 
   --color-6: #8c74ad; 
   --color-7: #563182; 
+  --button-bg-color: linear-gradient(90deg, #e7deef 0%, #b8a6cc 100%);
+  --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%);
   
   /* New Variables */
-  --navbar-primary-background-color: var(--color-7);
-  --navbar-primary-text-color: var(--color-4);
+  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
   
-  --gradient-background-color: var(--color-3);
+  --gradient-background-color: var(--linear-gradient);
   --gradient-text-color: var(--color-1);
   
-  --button-gradient-background-color: var(--color-3);
-  --button-gradient-text-color: var(--color-1);
-  
-  --header-background-color: var(--color-5);
+  --header-background-color: var(--color-3);
   --header-text-color: var(--color-1);
+
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
+
+  --logo-and-cart-color: var(--color-7);
   
   --icons-variation1-background-color: var(--color-7);
   --icons-variation1-text-color: var(--color-1);
   
   --icons-variation2-background-color: var(--color-5);
-  --icons-variation2-text-color: var(--color-1);
+  --icons-variation2-color: var(--color-6);
   
   --body-background-color: var(--color-2);
-  --body-text-color: var(--color-1);
+  --body-text-color: var(--color-7);
   
   --blog-carousel-body-background-color: var(--color-6);
   --blog-carousel-body-text-color: var(--color-1);
   
-  --blog-preview-background-color: var(--color-3);
-  --blog-preview-text-color: var(--color-1);
+  --blog-preview-background-color: var(--color-4);
+  --blog-preview-text-color: var(--color-7);
   
-  --footer-background-color: var(--color-5);
-  --footer-text-color: var(--color-4);
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
   
-  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-background-color: var(--color-6);
   --genre-button-selected-text-color: var(--color-1);
   
-  --game-card-background-color: var(--color-3);
-  --game-card-text-color: var(--color-1);
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
   
-  --site-brag-background-color: var(--color-6);
-  --site-brag-text-color: var(--color-1);
+  --site-brag-background-color: var(--color-4);
   
-  --game-info-tab-background-color: var(--color-2);
-  --game-info-tab-text-color: var(--color-1);
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
   
-  --game-info-faq-background-color: var(--color-6);
+  --game-info-faq-background-color: var(--color-5);
   --game-info-faq-text-color: var(--color-1);
   
-  --nav-bar-second-line-background-color: var(--color-3);
-  --nav-bar-second-line-text-color: var(--color-1);
+
   
-  --game-brag-background-color: var(--color-7);
-  --game-brag-text-color: var(--color-1);
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
   
-  --game-info-right-background-color: var(--color-5);
-  --game-info-right-text-color: var(--color-4);
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
   
 }
 
