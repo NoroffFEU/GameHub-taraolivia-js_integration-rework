@@ -1,5 +1,3 @@
-
-
 /* Base Theme Styles - ensures default colors are set before any theme is selected */
 html {
   /* Text Colors */
@@ -7,7 +5,7 @@ html {
   --text-color-secondary: #563182;
   --text-color-tertiary: #fff;
   --text-color-purple: #563182;
-  --text-color-pink: #D1008A;
+  --text-color-pink: #d1008a;
 
   /* Background Colors */
   --background-color-primary: #f1ebf5;
@@ -38,196 +36,344 @@ html {
   --accent-color-tertiary: #8c74ad;
 
   --nav-color: #dcd1e8;
-  --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%)
+  --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%);
 }
 
 /* Light Theme */
 html[data-theme="light"] {
-  --text-color-primary: #563182;
-  --background-color-primary: #f1ebf5;
-
-  --text-color-secondary: #563182;
-  --background-color-secondary: #dcd1e8;
-
-  --text-color-tertiary: #fff;
-  --background-color-tertiary: #8c74ad;
-
-  --accent-color-primary: #e7deef;
-  --accent-color-secondary: #b8a6cc;
-  --accent-color-tertiary: #8c74ad;
-
-  --nav-color: #dcd1e8;
-  --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%)
+  --color-1: #fff;
+  --color-2: #f1ebf5;
+  --color-3: #e7deef; 
+  --color-4: #dcd1e8; 
+  --color-5: #b8a6cc; 
+  --color-6: #8c74ad; 
+  --color-7: #563182; 
+  
+  /* New Variables */
+  --navbar-primary-background-color: var(--color-7);
+  --navbar-primary-text-color: var(--color-4);
+  
+  --gradient-background-color: var(--color-3);
+  --gradient-text-color: var(--color-1);
+  
+  --button-gradient-background-color: var(--color-3);
+  --button-gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-5);
+  --header-text-color: var(--color-1);
+  
+  --icons-variation1-background-color: var(--color-7);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-1);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-1);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-1);
+  
+  --footer-background-color: var(--color-5);
+  --footer-text-color: var(--color-4);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-3);
+  --game-card-text-color: var(--color-1);
+  
+  --site-brag-background-color: var(--color-6);
+  --site-brag-text-color: var(--color-1);
+  
+  --game-info-tab-background-color: var(--color-2);
+  --game-info-tab-text-color: var(--color-1);
+  
+  --game-info-faq-background-color: var(--color-6);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-7);
+  --game-brag-text-color: var(--color-1);
+  
+  --game-info-right-background-color: var(--color-5);
+  --game-info-right-text-color: var(--color-4);
+  
 }
 
 /* Dark Theme */
 html[data-theme="dark"] {
-  --text-color-primary: #FFFFFF;
-  --background-color-primary: #211142;
+  --color-1: #ffffff;
+  --color-2: #211142;
+  --color-3: #402a69;
+  --color-4: #846ba0;
+  --color-5: #28184f;
+  --color-6: #8c74ad;
 
-  --text-color-secondary: #FFFFFF;
-  --background-color-secondary: #402A69;
+  /* Text and Background Colors */
+  --text-color-primary: var(--color-1);
+  --background-color-primary: var(--color-2);
 
-  --text-color-tertiary: #FFFFFF;
-  --background-color-tertiary: #846BA0;
+  --text-color-secondary: var(--color-1);
+  --background-color-secondary: var(--color-3);
 
-  --accent-color-primary: #28184F;
-  --accent-color-secondary: #846BA0;
-  --accent-color-tertiary: #8C74AD;
+  --text-color-tertiary: var(--color-1);
+  --background-color-tertiary: var(--color-4);
 
-  --nav-color: #402A69;
-  --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%)
+  /* Accent Colors */
+  --accent-color-primary: var(--color-5);
+  --accent-color-secondary: var(--color-4);
+  --accent-color-tertiary: var(--color-6);
+
+  /* Navigation Color */
+  --nav-color: var(--color-3);
+
+  --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%);
 }
 
 /* Nature Theme */
 html[data-theme="nature"] {
-  --text-color-primary: #e8f5e9;
-  --background-color-primary: #abccae;
+  --color-1: #e8f5e9;
+  --color-2: #abccae;
+  --color-3: #a58f68;
+  --color-4: #4a7c59;
+  --color-5: #7ba484;
+  --color-6: #2d472c;
 
-  --text-color-secondary: #e8f5e9;
-  --background-color-secondary: #a58f68;
+  /* Text and Background Colors */
+  --text-color-primary: var(--color-1);
+  --background-color-primary: var(--color-2);
 
-  --text-color-tertiary: #e8f5e9;
-  --background-color-tertiary: #4a7c59;
+  --text-color-secondary: var(--color-1);
+  --background-color-secondary: var(--color-3);
 
-  --accent-color-primary: #7BA484;
-  --accent-color-secondary: #a58f68;
-  --accent-color-tertiary: #4a7c59;
+  --text-color-tertiary: var(--color-1);
+  --background-color-tertiary: var(--color-4);
 
-  --nav-color: #4a7c59;
+  /* Accent Colors */
+  --accent-color-primary: var(--color-5);
+  --accent-color-secondary: var(--color-3);
+  --accent-color-tertiary: var(--color-4);
+
+  /* Navigation Color */
+  --nav-color: var(--color-4);
+
+  /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
     90deg,
-    #4a7c59 0%,
-    #2d472c 100%
+    var(--color-4) 0%,
+    var(--color-6) 100%
   );
-  --linear-gradient: linear-gradient(180deg, #4a7c59 0%, #2d472c 64.58%);
-  --button-hover-box-shadow: 0 0 30px #a58f68;
-  --background-image: url('../themeSwitcherTest/patterns/18.png');
+  --linear-gradient: linear-gradient(
+    180deg,
+    var(--color-4) 0%,
+    var(--color-6) 64.58%
+  );
+  --button-hover-box-shadow: 0 0 30px var(--color-3);
+
+  /* Background Image */
+  --background-image: url("../themeSwitcherTest/patterns/18.png");
+
+  /* Text Background */
   --text-background: var(--color-primary);
-
 }
-
-
-
-html[data-theme="neon"] {
-  --text-color-primary: #211951;
-  --background-color-primary: #211951;
-
-  --text-color-secondary: #211951;
-  --background-color-secondary: #4BFF36;
-
-  --text-color-tertiary: #101010;
-  --background-color-tertiary: #ff54af;
-
-  --accent-color-primary: #4BFF36;
-  --accent-color-secondary: #ff54af;
-  --accent-color-tertiary: #FFEF06;
-
-  --nav-color: #fb53ad;
-  --button-bg-color: linear-gradient(90deg, #FF3EA5 0%, #27005D 100%);
-  --linear-gradient: linear-gradient(180deg, #4BFF36 0%, #FF3EA5 65.58%);
-  --button-hover-box-shadow: 0 0 30px #a58f68;
-
-  --background-image: url('../themeSwitcherTest/patterns/21.png');
-
-
-}
-
 
 /* Pink Theme */
 html[data-theme="pink"] {
-  --text-color-primary: #7c0089;
-  --background-color-primary: #f2cfd5;
+  --color-1: #7c0089;
+  --color-2: #f2cfd5;
+  --color-3: #f9aebb;
+  --color-4: #fff;
+  --color-5: #ff69b4;
+  --color-6: #ffc0cb;
+  --color-7: #fe9ece;
+  --color-8: #ff3ea5;
 
-  --text-color-secondary: #7c0089;
-  --background-color-secondary: #f9aebb;
+  /* Text and Background Colors */
+  --text-color-primary: var(--color-1);
+  --background-color-primary: var(--color-2);
 
-  --text-color-tertiary: #fff;
-  --background-color-tertiary: #ff69b4;
+  --text-color-secondary: var(--color-1);
+  --background-color-secondary: var(--color-3);
 
-  --accent-color-primary: #ffc0cb;
-  --accent-color-secondary: #fe9ece;
-  --accent-color-tertiary: #FF3EA5;
+  --text-color-tertiary: var(--color-4);
+  --background-color-tertiary: var(--color-5);
 
-  --nav-color: #f9aebb;
-  --button-bg-color: linear-gradient(90deg, #ffc0cb 0%, #FF3EA5 100%);
-  --linear-gradient: linear-gradient(180deg, #ff69b4 0%, #FF3EA5 64.58%);
+  /* Accent Colors */
+  --accent-color-primary: var(--color-6);
+  --accent-color-secondary: var(--color-7);
+  --accent-color-tertiary: var(--color-8);
 
-  --background-image: url('../themeSwitcherTest/patterns/20.png');
+  /* Navigation Color */
+  --nav-color: var(--color-3);
 
+  /* Button and Gradient Colors */
+  --button-bg-color: linear-gradient(
+    90deg,
+    var(--color-6) 0%,
+    var(--color-8) 100%
+  );
+  --linear-gradient: linear-gradient(
+    180deg,
+    var(--color-5) 0%,
+    var(--color-8) 64.58%
+  );
 
-
-
-
-}
-
-/* Black Theme */
-html[data-theme="black"] {
-  --text-color-primary: #ffffff;
-  --background-color-primary: #121212;
-
-  --text-color-secondary: #ffffff;
-  --background-color-secondary: #333333;
-
-  --text-color-tertiary: #ffffff;
-  --background-color-tertiary: #444444;
-
-  --accent-color-primary: #222222;
-  --accent-color-secondary: #333333;
-  --accent-color-tertiary: #444444;
-
-  --nav-color: #5b5b5b;
-  --button-bg-color: linear-gradient(90deg, #5b5b5b 0%, #121212 100%);
-  --linear-gradient: linear-gradient(180deg, #5b5b5b 0%, #444444 64.58%);
-  --button-hover-box-shadow: 0 0 30px #fff;
-
-}
-
-
-
-
-/* White Theme */
-html[data-theme="white"] {
-  --text-color-primary: #222222;
-  --background-color-primary: #ffffff98;
-
-  --text-color-secondary: #222222;
-  --background-color-secondary: #dddddd;
-
-  --text-color-tertiary: #ffffff;
-  --background-color-tertiary: #bebebe;
-
-  --accent-color-primary: #eceaea;
-  --accent-color-secondary: #bebebe;
-  --accent-color-tertiary: #959595;
-
-  --nav-color: #dddddd;
-  --button-bg-color: linear-gradient(90deg, #c6c4c4 0%, #222222 100%);
-  --linear-gradient: linear-gradient(180deg, #c6c4c4 0%, #222222 64.58%);
-  --button-hover-box-shadow: 0 0 30px #ffffff;
-
+  /* Background Image */
+  --background-image: url("../themeSwitcherTest/patterns/20.png");
 }
 
 /* Pastel Theme */
 html[data-theme="pastel"] {
-  --text-color-primary: #2b2622;
-  --background-color-primary: #FFF3DA;
+  --color-1: #2b2622;
+  --color-2: #fff3da;
+  --color-3: #fdcedf;
+  --color-4: #d1ebc9;
+  --color-5: #d5bdaf;
+  --color-6: #c8b6ff;
+  --color-7: #ffd6ff;
 
-  --text-color-secondary: #2b2622;
-  --background-color-secondary: #FDCEDF;
+  --text-color-primary: var(--color-1);
+  --background-color-primary: var(--color-2);
 
-  --text-color-tertiary: #2b2622;
-  --background-color-tertiary: #D1EBC9;
+  --text-color-secondary: var(--color-1);
+  --background-color-secondary: var(--color-3);
 
-  --accent-color-primary: #D1EBC9;
-  --accent-color-secondary: #FDCEDF;
-  --accent-color-tertiary: #d5bdaf;
+  --text-color-tertiary: var(--color-1);
+  --background-color-tertiary: var(--color-4);
 
-  --nav-color: #c8b6ff;
-  --button-bg-color: linear-gradient(90deg, #D1EBC9 0%, #c8b6ff 100%);
-  --linear-gradient: linear-gradient(180deg, #ffd6ff 0%, #c8b6ff 64.58%);
---background-image: url('../themeSwitcherTest/patterns/19.png');
+  --accent-color-primary: var(--color-4);
+  --accent-color-secondary: var(--color-3);
+  --accent-color-tertiary: var(--color-5);
+
+  --nav-color: var(--color-6);
+  --button-bg-color: linear-gradient(90deg, var(--color-4) 0%, var(--color-6) 100%);
+  --linear-gradient: linear-gradient(180deg, var(--color-7) 0%, var(--color-6) 64.58%);
+  --background-image: url("../themeSwitcherTest/patterns/19.png");
 }
+
+/* Black Theme */
+html[data-theme="black"] {
+  --color-1: #ffffff;
+  --color-2: #121212;
+  --color-3: #333333;
+  --color-4: #444444;
+  --color-5: #222222;
+  --color-6: #5b5b5b;
+
+  /* Text and Background Colors */
+  --text-color-primary: var(--color-1);
+  --background-color-primary: var(--color-2);
+
+  --text-color-secondary: var(--color-1);
+  --background-color-secondary: var(--color-3);
+
+  --text-color-tertiary: var(--color-1);
+  --background-color-tertiary: var(--color-4);
+
+  /* Accent Colors */
+  --accent-color-primary: var(--color-5);
+  --accent-color-secondary: var(--color-3);
+  --accent-color-tertiary: var(--color-4);
+
+  /* Navigation Color */
+  --nav-color: var(--color-6);
+
+  /* Button and Gradient Colors */
+  --button-bg-color: linear-gradient(
+    90deg,
+    var(--color-6) 0%,
+    var(--color-2) 100%
+  );
+  --linear-gradient: linear-gradient(
+    180deg,
+    var(--color-6) 0%,
+    var(--color-4) 64.58%
+  );
+  --button-hover-box-shadow: 0 0 30px var(--color-1);
+}
+
+/* White Theme */
+html[data-theme="white"] {
+  --color-1: #222222;
+  --color-2: #ffffff98;
+  --color-3: #dddddd;
+  --color-4: #ffffff;
+  --color-5: #bebebe;
+  --color-6: #eceaea;
+  --color-7: #959595;
+  --color-8: #c6c4c4;
+
+  --text-color-primary: var(--color-1);
+  --background-color-primary: var(--color-2);
+
+  --text-color-secondary: var(--color-1);
+  --background-color-secondary: var(--color-3);
+
+  --text-color-tertiary: var(--color-4);
+  --background-color-tertiary: var(--color-5);
+
+  --accent-color-primary: var(--color-6);
+  --accent-color-secondary: var(--color-5);
+  --accent-color-tertiary: var(--color-7);
+
+  --nav-color: var(--color-3);
+  --button-bg-color: linear-gradient(90deg, var(--color-8) 0%, var(--color-1) 100%);
+  --linear-gradient: linear-gradient(180deg, var(--color-8) 0%, var(--color-1) 64.58%);
+  --button-hover-box-shadow: 0 0 30px var(--color-4);
+}
+
+/* neon Theme */
+html[data-theme="neon"] {
+  --color-1: #211951;
+  --color-2: #4bff36;
+  --color-3: #101010;
+  --color-4: #ff54af;
+  --color-5: #ffef06;
+  --color-6: #fb53ad;
+  --color-7: #ff3ea5;
+  --color-8: #27005d;
+
+  /* Text and Background Colors */
+  --text-color-primary: var(--color-1);
+  --background-color-primary: var(--color-1);
+
+  --text-color-secondary: var(--color-1);
+  --background-color-secondary: var(--color-2);
+
+  --text-color-tertiary: var(--color-3);
+  --background-color-tertiary: var(--color-4);
+
+  /* Accent Colors */
+  --accent-color-primary: var(--color-2);
+  --accent-color-secondary: var(--color-4);
+  --accent-color-tertiary: var(--color-5);
+
+  /* Navigation Color */
+  --nav-color: var(--color-6);
+
+  /* Button and Gradient Colors */
+  --button-bg-color: linear-gradient(
+    90deg,
+    var(--color-7) 0%,
+    var(--color-8) 100%
+  );
+  --linear-gradient: linear-gradient(
+    180deg,
+    var(--color-2) 0%,
+    var(--color-7) 65.58%
+  );
+  --button-hover-box-shadow: 0 0 30px #a58f68;
+
+  /* Background Image */
+  --background-image: url("../themeSwitcherTest/patterns/21.png");
+}
+
 
 body {
   background-image: var(--background-image);
@@ -236,28 +382,25 @@ body {
   background-position: center;
 }
 
-  
-  #logo path{
-    fill: var(--text-color-primary);
-  }
-  
-  .dark #alternate-logo path{
-    fill: var(--text-color-primary);
-  }
+#logo path {
+  fill: var(--text-color-primary);
+}
 
-  .footer__logo path {
-    fill: var(--text-color-tertiary);
-  }
+.dark #alternate-logo path {
+  fill: var(--text-color-primary);
+}
 
-  .footer__social-media path {
-    fill: var(--text-color-tertiary);
-  }
+.footer__logo path {
+  fill: var(--text-color-tertiary);
+}
 
-  .navbar__logo--small path{
-    fill: var(--text-color-primary);
-  }
+.footer__social-media path {
+  fill: var(--text-color-tertiary);
+}
 
-
+.navbar__logo--small path {
+  fill: var(--text-color-primary);
+}
 
 /* Light Theme */
 .day-primary {
@@ -274,15 +417,15 @@ body {
 
 /* Dark Theme */
 .night-primary {
-  background-color: #28184F;
+  background-color: #28184f;
 }
 
 .night-secondary {
-  background-color: #846BA0;
+  background-color: #846ba0;
 }
 
 .night-accent {
-  background-color: #8C74AD;
+  background-color: #8c74ad;
 }
 
 /* Nature Theme */
@@ -363,12 +506,6 @@ body {
   background-color: #f368e0;
 }
 
-
-
-
-
-
-
 .theme-display img {
   height: 60px;
 }
@@ -389,7 +526,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 15px;
-  width: 430px; 
+  width: 430px;
   white-space: nowrap;
   z-index: 1000;
   background-color: #2b2b2b;
@@ -397,7 +534,7 @@ body {
 
 .theme-display:hover .theme-picker {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   width: 100px;
   justify-content: center;
   align-content: center;
@@ -405,7 +542,7 @@ body {
 
 .theme-picker.open {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   width: 100px;
   justify-content: center;
   align-content: center;
@@ -416,22 +553,22 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px;
-  transition: opacity 0.3s, transform 0.3s; 
+  transition: opacity 0.3s, transform 0.3s;
   text-align: center;
 }
 
 .theme-option img {
-  width: 30px; 
+  width: 30px;
   height: 30px;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-content: center;
   margin: auto;
 }
 
 .theme-option .theme-name {
-  display: none; 
-  margin-top: 15px; 
+  display: none;
+  margin-top: 15px;
   color: whitesmoke;
 }
 
@@ -456,51 +593,7 @@ body {
   margin: auto;
 }
 
-
-
 .theme-option:hover img {
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Additional hover effects to preview theme colors 
-.theme-option[data-theme="light"]:hover {
-  background-color: var(text-color-primary);
-}
-
-.theme-option[data-theme="dark"]:hover {
-  background-color: var(text-color-primary); 
-}
-
-.theme-option[data-theme="nature"]:hover {
-  background-color: var(text-color-primary); 
-}
-
-.theme-option[data-theme="pink"]:hover {
-  background-color: var(text-color-primary);
-}
-
-.theme-option[data-theme="pastel"]:hover {
-  background-color: var(text-color-primary);
-}
-
-.theme-option[data-theme="black"]:hover {
-  background-color: var(text-color-primary); 
-}
-
-.theme-option[data-theme="white"]:hover {
-  background-color: var(text-color-primary); 
-}
-
-.theme-option[data-theme="neon"]:hover {
-  background-color: transparent; 
-}*/

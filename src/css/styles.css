@@ -1,14 +1,13 @@
-@import url(root.css);
-@import url(/src/css/color-theme.css);
-@import url(/src/css/game-image-gallery.css);
 @import url(/src/css/reset.css);
+@import url(/src/css/color-theme.css);
+@import url(/src/css/root.css);
 
 /* This is for trying to implement my root into an html file */
 
 body {
   font-family: var(--font-base);
   color: var(--text-color-primary);
-  background: var(--background-color-primary);
+  background: var(--body-background-color);
   margin: 0px auto;
   box-sizing: border-box;
   transition: background-color 1s ease, color 2s ease;
@@ -291,6 +290,55 @@ input::placeholder {
 
 #cart-overlay.visible {
   display: block;
+}
+
+/* game image gallery */
+
+.thumbnails-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-height: 400px;
+  margin: auto;
+  justify-content: center;
+}
+
+.gallery-container {
+  position: relative;
+  max-width: 400px;
+min-height: 300px;
+padding-bottom: 20px;
+}
+
+.row img{
+  max-height: 200px;
+}
+
+.row {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+}
+
+.mySlides {
+  display: none;
+}
+
+
+.demo.cursor {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.demo.cursor:hover, .demo.cursor.active {
+  opacity: 1;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #8C74AD;
+  color: white;
+  padding: 10px 0px;
 }
 
 .review-card {
@@ -656,7 +704,7 @@ input::placeholder {
 }
 
 .navbar__primary {
-  background: var(--nav-color);
+  background: var(--navbar-primary-background-color);
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -722,7 +770,7 @@ width: 90%;
 
 .navbar__links a,
 .navbar__hamburger-links a {
-  color: var(--text-color-secondary);
+  color: var(--navbar-primary-text-color);
   transition: 0.2 ease-in;
   animation: glow 1s ease-in-out infinite alternate;
   font-family: var(--font-heading-secondary);
@@ -803,7 +851,7 @@ width: 90%;
 }
 
 .header {
-  background: var(--accent-color-primary);
+  background: var(--header-background-color);
   padding-bottom: 30px;
 }
 
@@ -2229,3 +2277,6 @@ aside img {
     padding-top: 0;
   }
 }
+
+@import url(/src/css/color-theme.css);
+

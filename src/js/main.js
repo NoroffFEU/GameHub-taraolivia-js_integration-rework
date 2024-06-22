@@ -18,7 +18,6 @@ import { createReviewCard } from './components/reviewCard.mjs';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM fully loaded and parsed');
   
   const header = document.querySelector('header');
   if (header) {
