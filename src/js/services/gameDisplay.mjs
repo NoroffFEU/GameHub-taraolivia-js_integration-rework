@@ -19,18 +19,18 @@ export function setupNavigationListeners() {
     const links = document.querySelectorAll("a");
     links.forEach((link) => {
         link.addEventListener("click", function () {
-            const loadingIndicator = document.getElementById("loading-indicator");
+            const loadingIndicator = document.querySelector(".bean-eater-container");
             if (loadingIndicator) loadingIndicator.style.display = "flex";
         });
     });
 
     window.addEventListener("load", function () {
-        const loadingIndicator = document.getElementById("loading-indicator");
+        const loadingIndicator = document.querySelector(".bean-eater-container");
         if (loadingIndicator) loadingIndicator.style.display = "none";
     });
 }
 
-function updateGamesDisplay(games, container) {
+export function updateGamesDisplay(games, container) {
     container.innerHTML = "";
     games.forEach((game) => {
         container.appendChild(createElementForGame(game));

@@ -1,7 +1,7 @@
-import { showSpinner, hideSpinner } from '../utilities/loading-indicator.mjs';
+import { showWedge, hideWedge } from '../utilities/loadingIndicatorWedge.mjs';
 
 export async function fetchTrendingGames() {
-    showSpinner();
+    showWedge();
 
     try {
         const gameIds = [
@@ -22,12 +22,12 @@ export async function fetchTrendingGames() {
     } catch (error) {
         console.error("Failed to fetch trending games:", error);
     } finally {
-        hideSpinner();
+        hideWedge();
     }
 }
 
 export async function fetchAllGames() {
-    showSpinner();
+    showWedge();
 
     try {
         const response = await fetch("https://api.noroff.dev/api/v1/gamehub");
@@ -37,8 +37,6 @@ export async function fetchAllGames() {
     } catch (error) {
         console.error("Failed to fetch games:", error);
     } finally {
-        hideSpinner();
+        hideWedge();
     }
 }
-
-  

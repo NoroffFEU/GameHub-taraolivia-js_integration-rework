@@ -1,4 +1,4 @@
-import { showSpinner, hideSpinner } from '../utilities/loading-indicator.mjs';
+import { showWedge as showSpinner, hideWedge as hideSpinner } from '../utilities/loadingIndicatorWedge.mjs';
 import { addToCart, updateButtonText } from '../components/cart.mjs';
 
 document.addEventListener("DOMContentLoaded", function () {

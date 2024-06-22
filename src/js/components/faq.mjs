@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
+export function setupFAQ() {
   const faqItems = document.querySelectorAll(".faq-item");
 
   faqItems.forEach(function (item) {
-    const question = item.querySelector(".question");
-    const answer = item.querySelector(".answer");
+      const question = item.querySelector(".question");
+      const answer = item.querySelector(".answer");
 
-    question.addEventListener("click", function () {
-      answer.classList.toggle("show");
-    });
+      question.addEventListener("click", function () {
+          answer.classList.toggle("show");
+      });
   });
-});
+}

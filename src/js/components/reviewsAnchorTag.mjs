@@ -1,4 +1,4 @@
-function openTab(event, tabName) {
+export function openTab(event, tabName) {
   // Hide all tab contents
   const tabContents = document.getElementsByClassName("tab-content");
   for (const content of tabContents) {
@@ -29,18 +29,29 @@ function openTab(event, tabName) {
   }
 }
 
-function smoothScroll(target) {
+export function smoothScroll(target, offset = 0) {
   const element = document.getElementById(target);
   if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - offset;
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
     return false; // Prevent default anchor behavior
   }
 }
 
-document.getElementById("reviews-link").addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent the default behavior of the anchor tag
-  const reviewsTab = document.getElementById("Reviews");
-  if (reviewsTab) {
-    reviewsTab.scrollIntoView({ behavior: "smooth" }); // Scroll to the reviews section smoothly
+export function setupReviewsLink() {
+  const reviewsLink = document.getElementById("reviews-link");
+  if (reviewsLink) {
+    reviewsLink.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor tag
+      const reviewsTab = document.getElementById("Reviews");
+      if (reviewsTab) {
+        openTab(event, "Reviews"); // Open the Reviews tab
+        smoothScroll("Reviews", 100); // Scroll to the reviews section smoothly, adjust 100 to your navbar height
+      }
+    });
   }
-});
+}
