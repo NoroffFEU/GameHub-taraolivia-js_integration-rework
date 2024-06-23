@@ -51,7 +51,6 @@ html[data-theme="light"] {
   --button-bg-color: linear-gradient(90deg, #e7deef 0%, #b8a6cc 100%);
   --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%);
   
-  /* New Variables */
   --navbar-primary-background-color: var(--color-4);
   --navbar-primary-text-color: var(--color-7);
   
@@ -66,7 +65,7 @@ html[data-theme="light"] {
 
   --logo-and-cart-color: var(--color-7);
   
-  --icons-variation1-background-color: var(--color-7);
+  --icons-variation1-background-color: var(--color-1);
   --icons-variation1-text-color: var(--color-1);
   
   --icons-variation2-background-color: var(--color-5);
@@ -109,59 +108,127 @@ html[data-theme="light"] {
 /* Dark Theme */
 html[data-theme="dark"] {
   --color-1: #ffffff;
-  --color-2: #211142;
-  --color-3: #402a69;
-  --color-4: #846ba0;
+  --color-2: #8c74ad;
+  --color-3: #846ba0;
+  --color-4: #402a69;
   --color-5: #28184f;
-  --color-6: #8c74ad;
+  --color-6: #211142;
+  
 
-  /* Text and Background Colors */
-  --text-color-primary: var(--color-1);
-  --background-color-primary: var(--color-2);
+  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
+  
+  --gradient-background-color: var(--linear-gradient);
+  --gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-3);
+  --header-text-color: var(--color-7);
 
-  --text-color-secondary: var(--color-1);
-  --background-color-secondary: var(--color-3);
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
 
-  --text-color-tertiary: var(--color-1);
-  --background-color-tertiary: var(--color-4);
-
-  /* Accent Colors */
-  --accent-color-primary: var(--color-5);
-  --accent-color-secondary: var(--color-4);
-  --accent-color-tertiary: var(--color-6);
-
-  /* Navigation Color */
-  --nav-color: var(--color-3);
-
-  --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%);
+  --logo-and-cart-color: var(--color-7);
+  
+  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-7);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-7);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-7);
+  
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
+  
+  --site-brag-background-color: var(--color-4);
+  
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
+  
+  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
+  
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
 }
 
 /* Nature Theme */
 html[data-theme="nature"] {
-  --color-1: #e8f5e9;
-  --color-2: #abccae;
-  --color-3: #a58f68;
-  --color-4: #4a7c59;
-  --color-5: #7ba484;
-  --color-6: #2d472c;
+  --color-1: #e8f5e9; 
+  --color-2: #a58f68;  
+  --color-3: #abccae; 
+  --color-4: #7ba484;  
+  --color-5: #4a7c59;  
+  --color-6: #2d472c;  
+  --color-7: #1e2f1e;
+  
+  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
+  
+  --gradient-background-color: var(--linear-gradient);
+  --gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-3);
+  --header-text-color: var(--color-7);
 
-  /* Text and Background Colors */
-  --text-color-primary: var(--color-1);
-  --background-color-primary: var(--color-2);
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
 
-  --text-color-secondary: var(--color-1);
-  --background-color-secondary: var(--color-3);
-
-  --text-color-tertiary: var(--color-1);
-  --background-color-tertiary: var(--color-4);
-
-  /* Accent Colors */
-  --accent-color-primary: var(--color-5);
-  --accent-color-secondary: var(--color-3);
-  --accent-color-tertiary: var(--color-4);
-
-  /* Navigation Color */
-  --nav-color: var(--color-4);
+  --logo-and-cart-color: var(--color-7);
+  
+  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-7);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-7);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-7);
+  
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
+  
+  --site-brag-background-color: var(--color-4);
+  
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
+  
+  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
+  
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
 
   /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
@@ -177,40 +244,71 @@ html[data-theme="nature"] {
   --button-hover-box-shadow: 0 0 30px var(--color-3);
 
   /* Background Image */
-  --background-image: url("../themeSwitcherTest/patterns/18.png");
-
-  /* Text Background */
-  --text-background: var(--color-primary);
+  --background-image: url("/assets/images/patterns/20.png");
 }
 
 /* Pink Theme */
 html[data-theme="pink"] {
-  --color-1: #7c0089;
+  --color-1: #fff;
   --color-2: #f2cfd5;
   --color-3: #f9aebb;
-  --color-4: #fff;
+  --color-4: #fe9ece;
   --color-5: #ff69b4;
-  --color-6: #ffc0cb;
-  --color-7: #fe9ece;
-  --color-8: #ff3ea5;
+  --color-6: #ff3ea5;
+  --color-7: #7c0089;
+  
 
-  /* Text and Background Colors */
-  --text-color-primary: var(--color-1);
-  --background-color-primary: var(--color-2);
+  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
+  
+  --gradient-background-color: var(--linear-gradient);
+  --gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-3);
+  --header-text-color: var(--color-7);
 
-  --text-color-secondary: var(--color-1);
-  --background-color-secondary: var(--color-3);
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
 
-  --text-color-tertiary: var(--color-4);
-  --background-color-tertiary: var(--color-5);
-
-  /* Accent Colors */
-  --accent-color-primary: var(--color-6);
-  --accent-color-secondary: var(--color-7);
-  --accent-color-tertiary: var(--color-8);
-
-  /* Navigation Color */
-  --nav-color: var(--color-3);
+  --logo-and-cart-color: var(--color-7);
+  
+  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-7);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-7);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-7);
+  
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
+  
+  --site-brag-background-color: var(--color-4);
+  
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
+  
+  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
+  
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
 
   /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
@@ -225,64 +323,138 @@ html[data-theme="pink"] {
   );
 
   /* Background Image */
-  --background-image: url("../themeSwitcherTest/patterns/20.png");
+  --background-image: url("/assets/images/patterns/20.png");
 }
 
 /* Pastel Theme */
 html[data-theme="pastel"] {
-  --color-1: #2b2622;
-  --color-2: #fff3da;
-  --color-3: #fdcedf;
-  --color-4: #d1ebc9;
+  --color-1: #fff3da;
+  --color-2: #ffd6ff;
+  --color-3: #d1ebc9;
+  --color-4: #fdcedf;
   --color-5: #d5bdaf;
   --color-6: #c8b6ff;
-  --color-7: #ffd6ff;
+  --color-7: #2b2622;
+  
 
-  --text-color-primary: var(--color-1);
-  --background-color-primary: var(--color-2);
+  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
+  
+  --gradient-background-color: var(--linear-gradient);
+  --gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-3);
+  --header-text-color: var(--color-7);
 
-  --text-color-secondary: var(--color-1);
-  --background-color-secondary: var(--color-3);
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
 
-  --text-color-tertiary: var(--color-1);
-  --background-color-tertiary: var(--color-4);
+  --logo-and-cart-color: var(--color-7);
+  
+  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-7);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-7);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-7);
+  
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
+  
+  --site-brag-background-color: var(--color-4);
+  
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
+  
+  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
+  
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
 
-  --accent-color-primary: var(--color-4);
-  --accent-color-secondary: var(--color-3);
-  --accent-color-tertiary: var(--color-5);
-
-  --nav-color: var(--color-6);
   --button-bg-color: linear-gradient(90deg, var(--color-4) 0%, var(--color-6) 100%);
   --linear-gradient: linear-gradient(180deg, var(--color-7) 0%, var(--color-6) 64.58%);
-  --background-image: url("../themeSwitcherTest/patterns/19.png");
+  --background-image: url("/assets/images/patterns/20.png");
 }
 
 /* Black Theme */
 html[data-theme="black"] {
-  --color-1: #ffffff;
-  --color-2: #121212;
+  --color-1: #121212;
+  --color-2: #222222;
   --color-3: #333333;
   --color-4: #444444;
-  --color-5: #222222;
-  --color-6: #5b5b5b;
+  --color-5: #5b5b5b;
+  --color-6: #ffffff;
+  
 
-  /* Text and Background Colors */
-  --text-color-primary: var(--color-1);
-  --background-color-primary: var(--color-2);
+   --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
+  
+  --gradient-background-color: var(--linear-gradient);
+  --gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-3);
+  --header-text-color: var(--color-7);
 
-  --text-color-secondary: var(--color-1);
-  --background-color-secondary: var(--color-3);
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
 
-  --text-color-tertiary: var(--color-1);
-  --background-color-tertiary: var(--color-4);
-
-  /* Accent Colors */
-  --accent-color-primary: var(--color-5);
-  --accent-color-secondary: var(--color-3);
-  --accent-color-tertiary: var(--color-4);
-
-  /* Navigation Color */
-  --nav-color: var(--color-6);
+  --logo-and-cart-color: var(--color-7);
+  
+  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-7);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-7);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-7);
+  
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
+  
+  --site-brag-background-color: var(--color-4);
+  
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
+  
+  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
+  
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
 
   /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
@@ -300,29 +472,67 @@ html[data-theme="black"] {
 
 /* White Theme */
 html[data-theme="white"] {
-  --color-1: #222222;
-  --color-2: #ffffff98;
-  --color-3: #dddddd;
-  --color-4: #ffffff;
-  --color-5: #bebebe;
-  --color-6: #eceaea;
+  --color-1: #ffffff;
+  --color-3: #eceaea;
+  --color-4: #dddddd;
+  --color-5: #c6c4c4;
+  --color-6: #bebebe;
   --color-7: #959595;
-  --color-8: #c6c4c4;
+  --color-8: #222222;
+  
 
-  --text-color-primary: var(--color-1);
-  --background-color-primary: var(--color-2);
+  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
+  
+  --gradient-background-color: var(--linear-gradient);
+  --gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-3);
+  --header-text-color: var(--color-7);
 
-  --text-color-secondary: var(--color-1);
-  --background-color-secondary: var(--color-3);
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
 
-  --text-color-tertiary: var(--color-4);
-  --background-color-tertiary: var(--color-5);
+  --logo-and-cart-color: var(--color-7);
+  
+  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-7);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-7);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-7);
+  
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
+  
+  --site-brag-background-color: var(--color-4);
+  
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
+  
+  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
+  
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
 
-  --accent-color-primary: var(--color-6);
-  --accent-color-secondary: var(--color-5);
-  --accent-color-tertiary: var(--color-7);
-
-  --nav-color: var(--color-3);
   --button-bg-color: linear-gradient(90deg, var(--color-8) 0%, var(--color-1) 100%);
   --linear-gradient: linear-gradient(180deg, var(--color-8) 0%, var(--color-1) 64.58%);
   --button-hover-box-shadow: 0 0 30px var(--color-4);
@@ -330,32 +540,67 @@ html[data-theme="white"] {
 
 /* neon Theme */
 html[data-theme="neon"] {
-  --color-1: #211951;
-  --color-2: #4bff36;
-  --color-3: #101010;
-  --color-4: #ff54af;
-  --color-5: #ffef06;
-  --color-6: #fb53ad;
-  --color-7: #ff3ea5;
-  --color-8: #27005d;
+  --color-1: #ffef06;
+  --color-2: #00ffff;
+  --color-3: #ff00ff;
+  --color-4: #4bff36;
+  --color-5: #27005d;
+  --color-6: #0f0b3d;
+  --color-7: #101010;
+  
+  
 
-  /* Text and Background Colors */
-  --text-color-primary: var(--color-1);
-  --background-color-primary: var(--color-1);
+   --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-text-color: var(--color-7);
+  
+  --gradient-background-color: var(--linear-gradient);
+  --gradient-text-color: var(--color-1);
+  
+  --header-background-color: var(--color-3);
+  --header-text-color: var(--color-7);
 
-  --text-color-secondary: var(--color-1);
-  --background-color-secondary: var(--color-2);
+  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-text-color: var(--color-7);
 
-  --text-color-tertiary: var(--color-3);
-  --background-color-tertiary: var(--color-4);
-
-  /* Accent Colors */
-  --accent-color-primary: var(--color-2);
-  --accent-color-secondary: var(--color-4);
-  --accent-color-tertiary: var(--color-5);
-
-  /* Navigation Color */
-  --nav-color: var(--color-6);
+  --logo-and-cart-color: var(--color-7);
+  
+  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-text-color: var(--color-1);
+  
+  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-text-color: var(--color-7);
+  
+  --body-background-color: var(--color-2);
+  --body-text-color: var(--color-7);
+  
+  --blog-carousel-body-background-color: var(--color-6);
+  --blog-carousel-body-text-color: var(--color-1);
+  
+  --blog-preview-background-color: var(--color-3);
+  --blog-preview-text-color: var(--color-7);
+  
+  --footer-background-color: var(--color-6);
+  --footer-text-color: var(--color-1);
+  
+  --genre-button-selected-background-color: var(--color-7);
+  --genre-button-selected-text-color: var(--color-1);
+  
+  --game-card-background-color: var(--color-4);
+  --game-card-text-color: var(--color-7);
+  
+  --site-brag-background-color: var(--color-4);
+  
+  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-text-color: var(--color-7);
+  
+  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-text-color: var(--color-1);
+  
+  --game-brag-background-color: var(--color-4);
+  --game-brag-text-color: var(--color-7);
+  
+  --game-page-primary-background-color: var(--color-3);
+  --game-page-primary-text-color: var(--color-7);
 
   /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
@@ -371,36 +616,10 @@ html[data-theme="neon"] {
   --button-hover-box-shadow: 0 0 30px #a58f68;
 
   /* Background Image */
-  --background-image: url("../themeSwitcherTest/patterns/21.png");
+  --background-image: url("/assets/images/patterns/20.png");
 }
 
 
-body {
-  background-image: var(--background-image);
-  background-repeat: repeat;
-  background-size: 1000px;
-  background-position: center;
-}
-
-#logo path {
-  fill: var(--text-color-primary);
-}
-
-.dark #alternate-logo path {
-  fill: var(--text-color-primary);
-}
-
-.footer__logo path {
-  fill: var(--text-color-tertiary);
-}
-
-.footer__social-media path {
-  fill: var(--text-color-tertiary);
-}
-
-.navbar__logo--small path {
-  fill: var(--text-color-primary);
-}
 
 /* Light Theme */
 .day-primary {
