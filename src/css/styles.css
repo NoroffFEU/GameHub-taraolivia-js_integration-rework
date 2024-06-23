@@ -77,7 +77,7 @@ section {
 
 .checkout-wrapper {
   display: flex;
-  background-color: var(--background-color-secondary);
+  background-color: var( --game-card-background-color);
   margin-top: 1em;
 }
 
@@ -95,7 +95,7 @@ section {
 
 #checkout-cart-list {
   width: 100%;
-  background-color: var(--accent-color-secondary);
+  background-color: var( --game-card-background-color);
   margin: 1em auto;
 }
 
@@ -187,8 +187,8 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     right: 0;
-    background-color: var(--accent-color-secondary);
-    padding: 5px;
+    background-color: var(--navbar-primary-background-color);
+    padding: 15px;
     border-radius: 5px;
     min-width: 40%;
     min-height: fit-content;
@@ -197,14 +197,14 @@ input::placeholder {
     overflow-x: scroll;
     overflow-y: scroll;
     align-content: flex-start;
-    top: 97px;
+    top: 96px;
     z-index: 10000;
     overflow: scroll;
   }
 
 .cart-item-count {
   color: var(--logo-and-cart-color);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #cart-container h2 {
@@ -342,7 +342,7 @@ padding-bottom: 20px;
 }
 
 .review-card {
-  background: var(--accent-color-tertiary);
+  background: var(--footer-background-color);
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -370,7 +370,7 @@ padding-bottom: 20px;
 
 .review-name {
   margin: 0;
-  color: white;
+  color: var(--footer-text-color);
   margin-top: 20px;
 }
 
@@ -380,7 +380,7 @@ padding-bottom: 20px;
 
 .review-text {
   margin: auto;
-  color: white;
+  color: var(--footer-text-color);
   text-align: center;
   font-size: 20px;
 }
@@ -407,18 +407,18 @@ padding-bottom: 20px;
 .original-price,
 .original-price-smaller {
   text-decoration: line-through;
-  color: var(--text-color-primary-purple);
+  color: var(--navbar-primary-text-color);
   margin-right: 5px;
 }
 
 .discounted-price,
 .discounted-price-smaller {
-  background-color: var(--accent-color-tertiary);
+  background-color: var(--icons-variation2-background-color);
   padding: 3px 5px;
   width: fit-content;
   font-weight: bold;
   border-radius: 8px;
-  color: var(--text-color-primary-lighter);
+  color: var(--icons-variation2-text-color);
 }
 
 .original-price-smaller,
@@ -1015,8 +1015,8 @@ width: 90%;
 }
 
 .contact-card {
-  background-color: var(--accent-color-tertiary);
-  color: #fff;
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -1483,8 +1483,10 @@ article {
 }
 
 .aside {
-  background: var(--accent-color-primary);
+  background: var(--header-background-color);
   padding: 40px;
+  max-width: 20%;
+  color: var(--header-text-color);
 }
 
 aside img {
@@ -1548,7 +1550,8 @@ aside img {
   display: flex;
   max-width: 100%;
   padding: 20px;
-  background: var(--accent-color-secondary);
+  background: var(--navbar-primary-background-color);
+  color: var(--navbar-primary-text-color);
 }
 
 .aside-secondary img {
@@ -1592,7 +1595,8 @@ aside img {
 
 .blog-page-card {
   display: flex;
-  background: var(--accent-color-primary);
+  background: var(--blog-preview-background-color);
+  color: var(--blog-preview-text-color);
   border-radius: 18px;
   margin: 30px 0px;
   padding: 8px;
@@ -1604,12 +1608,13 @@ aside img {
   flex-direction: column;
   justify-content: start;
   flex: 2;
+  padding: 1em 1em;
 }
 
 .blog-page-title {
   text-align: left;
   padding: 20px 25px;
-  color: var(--text-color-primary);
+  color: var(--blog-preview-text-color);
 }
 
 .blog-page-title:hover {
@@ -2184,7 +2189,6 @@ aside img {
     display: flex;
     max-width: 100%;
     padding: 20px;
-    background: var(--accent-color-secondary);
   }
 
   .aside img {
