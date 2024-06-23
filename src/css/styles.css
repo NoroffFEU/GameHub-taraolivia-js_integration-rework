@@ -682,7 +682,7 @@ padding-bottom: 20px;
 }
 
 .social-media__icons-dark svg {
-  fill: var(--icons-variation2-color);
+  fill: var(--icons-variation2-background-color);
 }
 
 .footer__social-media {
@@ -855,6 +855,7 @@ width: 90%;
 
 .header {
   background: var(--header-background-color);
+  color: var(--header-text-color);
   padding-bottom: 30px;
 }
 
