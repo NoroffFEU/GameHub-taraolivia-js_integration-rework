@@ -62,6 +62,7 @@ html {
   --game-page-primary-background-color: var(--color-3);
   --game-page-primary-text-color: var(--color-7);
   --linear-gradient: linear-gradient(180deg, #d1008a 0%, #563182 64.58%);
+  --background-color: transparent;
 }
 
 /* Light Theme */
@@ -220,14 +221,14 @@ html[data-theme="nature"] {
   --icons-variation1-background-color: var(--color-1);
   --icons-variation1-text-color: var(--color-1);
   
-  --icons-variation2-background-color: var(--color-5);
+  --icons-variation2-background-color: var(--color-4);
   --icons-variation2-text-color: var(--color-7);
   
-  --body-background-color: var(--color-2);
+  --body-background-color: var(--color-1);
   --body-text-color: var(--color-7);
   
-  --blog-carousel-body-background-color: var(--color-6);
-  --blog-carousel-body-text-color: var(--color-1);
+  --blog-carousel-body-background-color: var(--color-2);
+  --blog-carousel-body-text-color: var(--color-7);
   
   --blog-preview-background-color: var(--color-3);
   --blog-preview-text-color: var(--color-7);
@@ -238,22 +239,24 @@ html[data-theme="nature"] {
   --genre-button-selected-background-color: var(--color-7);
   --genre-button-selected-text-color: var(--color-1);
   
-  --game-card-background-color: var(--color-4);
+  --game-card-background-color: var(--color-3);
   --game-card-text-color: var(--color-7);
   
-  --site-brag-background-color: var(--color-4);
+  --site-brag-background-color: var(--color-3);
   
-  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-background-color: var(--color-3);
   --game-info-tab-text-color: var(--color-7);
   
-  --game-info-faq-background-color: var(--color-5);
-  --game-info-faq-text-color: var(--color-1);
+  --game-info-faq-background-color: var(--color-2);
+  --game-info-faq-text-color: var(--color-7);
   
   --game-brag-background-color: var(--color-4);
   --game-brag-text-color: var(--color-7);
   
   --game-page-primary-background-color: var(--color-3);
   --game-page-primary-text-color: var(--color-7);
+
+  --background-color: var(--color-1);
 
   /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
@@ -269,7 +272,7 @@ html[data-theme="nature"] {
   --button-hover-box-shadow: 0 0 30px var(--color-3);
 
   /* Background Image */
-  --background-image: url("/assets/images/patterns/20.png");
+  --background-image: url("/assets/images/patterns/18.png");
 }
 
 /* Pink Theme */

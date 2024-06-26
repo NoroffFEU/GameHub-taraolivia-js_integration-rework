@@ -62,6 +62,10 @@ section {
   padding-bottom: 40px;
 }
 
+.background-color {
+  background-color: var(--background-color);
+}
+
 
 .checkout-summary {
   display: flex;
@@ -539,7 +543,7 @@ padding-bottom: 20px;
   border: 2px solid var(--genre-button-selected-background-color);
   padding: 1em 2.2em;
   border-radius: 2em;
-  background-color: transparent;
+  background-color: var(--background-color);
   color: var(--body-text-color);
   font-family: var(--font-heading-primary);
   cursor: pointer;
@@ -1515,6 +1519,10 @@ article {
   color: var(--header-text-color);
 }
 
+.aside p {
+  font-size: 18px;
+}
+
 aside img {
   width: 100%;
 }
@@ -1544,7 +1552,20 @@ aside img {
 }
 
 .blog-post-p {
-  margin: 5% 0%;
+
+  border-radius: 1em;
+}
+
+.blog-post p, 
+.blog-post h3,
+.blog-post-secondary h3,
+.blog-post-secondary h4,
+.blog-post-p,
+.blog-post-secondary ol,
+.blog-post-secondary li  {
+  background-color: var(--background-color);
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
 }
 
 .blog-post-p li {
@@ -1679,6 +1700,8 @@ aside img {
   flex: 1;
   max-width: 550px;
   max-width: 75ch;
+  background-color: var(--background-color);
+  padding: 1em;
 }
 
 .about-card__title {
