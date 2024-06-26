@@ -20,22 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <script defer src="/src/js/pages/single-game.mjs"></script>
-    <script defer src="/src/js/components/breadcrumbs.mjs"></script>
-    <script defer src="/src/js/components/game-image-gallery.mjs"></script>
-    <script defer src="/src/js/utilities/loading-indicator.mjs"></script>
-    <script defer src="/src/js/components/game-info-tabs.mjs"></script>
-    <script defer src="/src/js/components/faq.mjs"></script>
-    <script defer src="/src/js/components/reviewCard.mjs"></script>
-    <script defer src="/src/js/components/reviewsAnchorTag.mjs"></script>
-    <script defer src="/src/js/utilities/themeToggle.mjs"></script>
-    <script defer src="/src/js/components/cart.mjs"></script>
-    <script defer src="/src/js/services/apiHandler.mjs"></script>
-    <script defer src="/src/js/services/gameDisplay.mjs"></script>
-    <script defer src="/src/js/utilities/gameFilter.mjs"></script>
-    <script defer src="/src/js/utilities/themeSwitcher.mjs"></script>
-    <script defer type="module" src="src/js/main.js"></script>
-
+    <script defer type="module" src="/src/js/main.js"></script>
   </head>
 
   <body>
@@ -43,16 +28,6 @@
       /*to prevent Firefox FOUC, this must be here*/
       let FF_FOUC_FIX;
     </script>
-
-    <div id="loading-indicator">
-      <div class="loader-container">
-        <img
-          src="assets/images/loading-indicator/Wedges@1.25x-5.3s-200px-200px.gif"
-          alt="Loading..."
-          class="page-loader"
-        />
-      </div>
-    </div>
 
     <div class="hero__background">
       <!-- 1. Navigation Bar -->
@@ -147,9 +122,8 @@
     <main>
       <div class="game-of-the-month">
         <div class="main-content__section">
-          <a href="games.html" class="button button--secondary button--start"
-            >START</a
-          >
+          <a href="/src/html/pages/games/games.html" class="button button--secondary button--start"
+            >START</a          >
 
           <p class="hero__description">
             By gamers, for gamers.
@@ -162,19 +136,19 @@
             PIXEL HEART
           </h2>
           <img
-            src="assets/images/index/pixel-heart-cover.png"
+            src="/assets/images/pages/index/pixel-heart-cover.png"
             class="game-of-the-month-image"
             alt="Scene from the indie game Pixel Heart with a boy and a cute fantasy animal"
           />
           <a
-            href="pixel-heart.html"
+            href="/src/html/pages/games/games.html"
             class="button button--primary button-discover"
             >pixel heart</a
           >
         </div>
       </div>
 
-      <p class="slogan">
+      <p class="slogan background-color">
         From indie gems to blockbuster hits,
         <br />
         we've got it all!
@@ -182,13 +156,6 @@
 
       <section class="background-primary">
         <div class="main-content__section-80">
-          <div class="spinner-container">
-            <img
-              src="assets/images/loading-indicator/Bean Eater@1.25x-1.0s-200px-200px (1).gif"
-              alt="Loading..."
-              class="spinner"
-            />
-          </div>
           <div class="hidden-until-loaded">
             <h2 class="text-left">TRENDING GAMES</h2>
             <div class="trending-games-wrap" id="trending-games-container">
@@ -211,47 +178,8 @@
     </main>
 
     <!-- 4. Blog Carousel -->
-    <section class="blog-carousel">
-      <h2>From Our Blog</h2>
+    <div id="blog-carousel"></div>
 
-      <div class="blog-carousel-wrap">
-        <a href="blog-post-1.html">
-          <div class="blog-card">
-            <img
-              alt="A girl is sitting in front of a computer in a room with plushies and a neon sign that reads “the coziest games to play this fall”."
-              class="blog-image"
-              src="assets/images/blog/cozy.png"
-            />
-            <h3 class="blog-post-title">
-              The coziest games to play this winter
-            </h3>
-          </div>
-        </a>
-
-        <a href="blog-post-2.html">
-          <div class="blog-card">
-            <img
-              alt="Neon colors and various gaming consoles under text that reads what type of gamer are you?"
-              class="blog-image"
-              src="assets/images/blog/quiz.png"
-            />
-            <h3 class="blog-post-title">QUIZ: What type of gamer are you?</h3>
-          </div>
-        </a>
-        <a href="blog-post-1.html">
-          <div class="blog-card">
-            <img
-              alt="text reading hot new releases this week surrounded by gaming consoles, video game covers and fire. "
-              class="blog-image"
-              src="assets/images/blog/hot.png"
-            />
-            <h3 class="blog-post-title">HOT new releases this week</h3>
-          </div>
-        </a>
-      </div>
-
-      <a href="blog.html" class="button button--blog">read blog</a>
-    </section>
 
     <!-- 5. Footer -->
     <footer class="footer">
