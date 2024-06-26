@@ -196,7 +196,7 @@ export function setupCartIcon() {
   });
 
   goToCheckoutBtn?.addEventListener("click", () => {
-      window.location.href = "../checkout/checkout.html";
+      window.location.href = "./checkout/checkout.html";
   });
 
   document.addEventListener("click", function (event) {

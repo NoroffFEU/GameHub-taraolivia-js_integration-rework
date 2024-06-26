@@ -754,7 +754,7 @@ html[data-theme="neon"] {
 }
 
 .theme-display img {
-  height: 60px;
+  height: 50px;
 }
 
 /* Base style for the theme display area */
@@ -762,8 +762,8 @@ html[data-theme="neon"] {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  padding: 10px;
-  margin-right: 2em;
+  padding: 15px 0px;
+  margin-right: 1em;
 }
 
 .theme-picker {

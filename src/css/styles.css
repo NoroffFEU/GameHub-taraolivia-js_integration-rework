@@ -1370,8 +1370,8 @@ a {
 
 
 .breadcrumbs {
-  padding-top: 100px;
-  padding-bottom: 25px;
+  padding-top: 95px;
+  padding-bottom: 0px;
   margin-bottom: 0px;
   background: var(--nav-bar-second-line-background-color);
   display: flex;
