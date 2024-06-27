@@ -277,12 +277,12 @@ html[data-theme="nature"] {
 /* Pink Theme */
 html[data-theme="pink"] {
   --color-1: #fff;
-  --color-2: #f2cfd5;
-  --color-3: #f9aebb;
-  --color-4: #fe9ece;
-  --color-5: #ff69b4;
-  --color-6: #ff3ea5;
-  --color-7: #7c0089;
+  --color-2: #F7CAD0;
+  --color-3: #FF99AC;
+  --color-4: #FF85A1;
+  --color-5: #FF5C8A;
+  --color-6: #f90093;
+  --color-7: #4d3523;
 
   --navbar-primary-background-color: var(--color-4);
   --navbar-primary-text-color: var(--color-7);
