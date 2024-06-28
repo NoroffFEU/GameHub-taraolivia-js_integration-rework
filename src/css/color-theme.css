@@ -307,8 +307,8 @@ html[data-theme="pink"] {
   --body-background-color: var(--color-2);
   --body-text-color: var(--color-7);
 
-  --blog-carousel-body-background-color: var(--color-6);
-  --blog-carousel-body-text-color: var(--color-1);
+  --blog-carousel-body-background-color: var(--color-5);
+  --blog-carousel-body-text-color: var(--color-7);
 
   --blog-preview-background-color: var(--color-3);
   --blog-preview-text-color: var(--color-7);
@@ -327,7 +327,7 @@ html[data-theme="pink"] {
   --game-info-tab-background-color: var(--color-4);
   --game-info-tab-text-color: var(--color-7);
 
-  --game-info-faq-background-color: var(--color-5);
+  --game-info-faq-background-color: var(--color-3);
   --game-info-faq-text-color: var(--color-1);
 
   --game-brag-background-color: var(--color-4);
@@ -341,13 +341,13 @@ html[data-theme="pink"] {
   /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
     90deg,
-    var(--color-6) 0%,
-    var(--color-8) 100%
+    var(--color-3) 0%,
+    var(--color-6) 100%
   );
   --linear-gradient: linear-gradient(
     180deg,
-    var(--color-5) 0%,
-    var(--color-8) 64.58%
+    var(--color-2) 0%,
+    var(--color-6) 64.58%
   );
 
   /* Background Image */
