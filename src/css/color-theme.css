@@ -364,7 +364,7 @@ html[data-theme="pastel"] {
   --color-6: #c8b6ff;
   --color-7: #2b2622;
 
-  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-background-color: var(--color-6);
   --navbar-primary-text-color: var(--color-7);
 
   --gradient-background-color: var(--linear-gradient);
@@ -378,7 +378,7 @@ html[data-theme="pastel"] {
 
   --logo-and-cart-color: var(--color-7);
 
-  --icons-variation1-background-color: var(--color-1);
+  --icons-variation1-background-color: var(--color-7);
   --icons-variation1-text-color: var(--color-1);
 
   --icons-variation2-background-color: var(--color-5);
@@ -388,13 +388,13 @@ html[data-theme="pastel"] {
   --body-text-color: var(--color-7);
 
   --blog-carousel-body-background-color: var(--color-6);
-  --blog-carousel-body-text-color: var(--color-1);
+  --blog-carousel-body-text-color: var(--color-7);
 
   --blog-preview-background-color: var(--color-3);
   --blog-preview-text-color: var(--color-7);
 
-  --footer-background-color: var(--color-6);
-  --footer-text-color: var(--color-1);
+  --footer-background-color: var(--color-5);
+  --footer-text-color: var(--color-7);
 
   --genre-button-selected-background-color: var(--color-7);
   --genre-button-selected-text-color: var(--color-1);
@@ -416,17 +416,17 @@ html[data-theme="pastel"] {
   --game-page-primary-background-color: var(--color-3);
   --game-page-primary-text-color: var(--color-7);
 
-  --background-color: var(--color-2);
+  --background-color: var(--color-1);
 
   --button-bg-color: linear-gradient(
     90deg,
-    var(--color-2) 0%,
-    var(--color-3) 100%
+    var(--color-5) 0%,
+    var(--color-7) 100%
   );
   --linear-gradient: linear-gradient(
     180deg,
-    var(--color-7) 0%,
-    var(--color-6) 64.58%
+    var(--color-5) 0%,
+    var(--color-7) 64.58%
   );
   --background-image: url("/assets/images/patterns/19.png");
 }
@@ -438,13 +438,14 @@ html[data-theme="black"] {
   --color-3: #333333;
   --color-4: #444444;
   --color-5: #5b5b5b;
-  --color-6: #ffffff;
+  --color-6: #8b8b8b;
+  --color-7: #ffffff;
 
   --navbar-primary-background-color: var(--color-4);
   --navbar-primary-text-color: var(--color-7);
 
   --gradient-background-color: var(--linear-gradient);
-  --gradient-text-color: var(--color-1);
+  --gradient-text-color: var(--color-7);
 
   --header-background-color: var(--color-3);
   --header-text-color: var(--color-7);
@@ -478,7 +479,7 @@ html[data-theme="black"] {
   --game-card-background-color: var(--color-4);
   --game-card-text-color: var(--color-7);
 
-  --site-brag-background-color: var(--color-4);
+  --site-brag-background-color: var(--color-5);
 
   --game-info-tab-background-color: var(--color-4);
   --game-info-tab-text-color: var(--color-7);
@@ -512,9 +513,8 @@ html[data-theme="white"] {
   --color-3: #eceaea;
   --color-4: #dddddd;
   --color-5: #c6c4c4;
-  --color-6: #bebebe;
-  --color-7: #959595;
-  --color-8: #222222;
+  --color-6: #8b8b8b;
+  --color-7: #222222;
 
   --navbar-primary-background-color: var(--color-4);
   --navbar-primary-text-color: var(--color-7);
@@ -570,13 +570,13 @@ html[data-theme="white"] {
 
   --button-bg-color: linear-gradient(
     90deg,
-    var(--color-8) 0%,
-    var(--color-1) 100%
+    var(--color-5) 0%,
+    var(--color-6) 100%
   );
   --linear-gradient: linear-gradient(
     180deg,
-    var(--color-8) 0%,
-    var(--color-1) 64.58%
+    var(--color-5) 0%,
+    var(--color-6) 64.58%
   );
   --button-hover-box-shadow: 0 0 30px var(--color-4);
 }
