@@ -313,7 +313,7 @@ html[data-theme="pink"] {
   --blog-preview-background-color: var(--color-3);
   --blog-preview-text-color: var(--color-7);
 
-  --footer-background-color: var(--color-6);
+  --footer-background-color: var(--color-5);
   --footer-text-color: var(--color-1);
 
   --genre-button-selected-background-color: var(--color-7);
@@ -357,8 +357,8 @@ html[data-theme="pink"] {
 /* Pastel Theme */
 html[data-theme="pastel"] {
   --color-1: #fff3da;
-  --color-2: #ffd6ff;
-  --color-3: #d1ebc9;
+  --color-2: #daeaf6;
+  --color-3: #def6ca;
   --color-4: #fdcedf;
   --color-5: #d5bdaf;
   --color-6: #c8b6ff;
@@ -384,7 +384,7 @@ html[data-theme="pastel"] {
   --icons-variation2-background-color: var(--color-5);
   --icons-variation2-text-color: var(--color-7);
 
-  --body-background-color: var(--color-2);
+  --body-background-color: var(--color-1);
   --body-text-color: var(--color-7);
 
   --blog-carousel-body-background-color: var(--color-6);
@@ -420,8 +420,8 @@ html[data-theme="pastel"] {
 
   --button-bg-color: linear-gradient(
     90deg,
-    var(--color-4) 0%,
-    var(--color-6) 100%
+    var(--color-2) 0%,
+    var(--color-3) 100%
   );
   --linear-gradient: linear-gradient(
     180deg,
