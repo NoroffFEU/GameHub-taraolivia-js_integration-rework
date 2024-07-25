@@ -485,7 +485,7 @@ html[data-theme="black"] {
   --game-info-tab-text-color: var(--color-7);
 
   --game-info-faq-background-color: var(--color-5);
-  --game-info-faq-text-color: var(--color-1);
+  --game-info-faq-text-color: var(--color-7);
 
   --game-brag-background-color: var(--color-4);
   --game-brag-text-color: var(--color-7);
@@ -560,7 +560,7 @@ html[data-theme="white"] {
   --game-info-tab-text-color: var(--color-7);
 
   --game-info-faq-background-color: var(--color-5);
-  --game-info-faq-text-color: var(--color-1);
+  --game-info-faq-text-color: var(--color-7);
 
   --game-brag-background-color: var(--color-4);
   --game-brag-text-color: var(--color-7);
@@ -583,24 +583,24 @@ html[data-theme="white"] {
 
 /* neon Theme */
 html[data-theme="neon"] {
-  --color-1: #ffef06;
-  --color-2: #00ffff;
-  --color-3: #ff00ff;
-  --color-4: #4bff36;
-  --color-5: #27005d;
-  --color-6: #0f0b3d;
+  --color-1: #fff;
+  --color-2: #ffef06;
+  --color-3: #00ffff;
+  --color-4: #ff00ff;
+  --color-5: #4bff36;
+  --color-6: #27005d;
   --color-7: #101010;
 
-  --navbar-primary-background-color: var(--color-4);
+  --navbar-primary-background-color: var(--color-5);
   --navbar-primary-text-color: var(--color-7);
 
   --gradient-background-color: var(--linear-gradient);
-  --gradient-text-color: var(--color-1);
+  --gradient-text-color: var(--color-6);
 
-  --header-background-color: var(--color-3);
+  --header-background-color: var(--color-4);
   --header-text-color: var(--color-7);
 
-  --nav-bar-second-line-background-color: var(--color-3);
+  --nav-bar-second-line-background-color: var(--color-4);
   --nav-bar-second-line-text-color: var(--color-7);
 
   --logo-and-cart-color: var(--color-7);
@@ -611,8 +611,8 @@ html[data-theme="neon"] {
   --icons-variation2-background-color: var(--color-5);
   --icons-variation2-text-color: var(--color-7);
 
-  --body-background-color: var(--color-2);
-  --body-text-color: var(--color-7);
+  --body-background-color: var(--color-6);
+  --body-text-color: var(--color-1);
 
   --blog-carousel-body-background-color: var(--color-6);
   --blog-carousel-body-text-color: var(--color-1);
@@ -623,21 +623,22 @@ html[data-theme="neon"] {
   --footer-background-color: var(--color-6);
   --footer-text-color: var(--color-1);
 
-  --genre-button-selected-background-color: var(--color-7);
-  --genre-button-selected-text-color: var(--color-1);
+  --genre-button-selected-background-color: var(--color-4);
+  --genre-button-selected-text-color: var(--color-7);
 
   --game-card-background-color: var(--color-4);
   --game-card-text-color: var(--color-7);
 
-  --site-brag-background-color: var(--color-4);
+  --site-brag-background-color: var(--color-5);
+  --site-brag-text-color: var(--color-7);
 
-  --game-info-tab-background-color: var(--color-4);
+  --game-info-tab-background-color: var(--color-5);
   --game-info-tab-text-color: var(--color-7);
 
-  --game-info-faq-background-color: var(--color-5);
-  --game-info-faq-text-color: var(--color-1);
+  --game-info-faq-background-color: var(--color-2);
+  --game-info-faq-text-color: var(--color-7);
 
-  --game-brag-background-color: var(--color-4);
+  --game-brag-background-color: var(--color-1);
   --game-brag-text-color: var(--color-7);
 
   --game-page-primary-background-color: var(--color-3);
@@ -646,17 +647,17 @@ html[data-theme="neon"] {
   /* Button and Gradient Colors */
   --button-bg-color: linear-gradient(
     90deg,
-    var(--color-7) 0%,
-    var(--color-8) 100%
+    var(--color-5) 0%,
+    var(--color-3) 100%
   );
   --linear-gradient: linear-gradient(
     180deg,
-    var(--color-2) 0%,
-    var(--color-7) 65.58%
+    var(--color-3) 0%,
+    var(--color-4) 65.58%
   );
   --button-hover-box-shadow: 0 0 30px #a58f68;
 
-  --background-color: var(--color-2);
+  --background-color: var(--color-6);
 
   /* Background Image */
   --background-image: url("/assets/images/patterns/21.png");

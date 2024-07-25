@@ -387,6 +387,7 @@ input::placeholder {
 
 .question {
   background-color: var(--game-info-faq-background-color);
+  color: var(--game-info-faq-text-color);
   padding: 10px;
   cursor: pointer;
 }
@@ -556,6 +557,7 @@ input::placeholder {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--game-info-tab-background-color);
+  color: var(--game-info-tab-text-color);
   margin-top: 30px;
   padding: 20px;
   border-radius: 15px;
@@ -613,7 +615,6 @@ input::placeholder {
 .tab-content th {
   background-color: var(--game-info-faq-background-color);
   color: var(--game-info-tab-text-color);
-  min-width: 300px;
 }
 
 .tab-content caption {
@@ -1485,6 +1486,7 @@ a {
   font-size: 18px;
   max-width: 80px;
   text-align: center;
+  color: var(--site-brag-text-color);
 }
 
 .blog-post {
