@@ -17,7 +17,6 @@ You can view the live version of the **GameHub Store** project [here](https://ga
 - [Technologies](#technologies)
 - [Learning Outcomes](#learning-outcomes)
 - [Ideas for Future Improvements](#ideas-for-future-improvements)
-- [Live Project](#live-project)
 
 
 ## Overview
