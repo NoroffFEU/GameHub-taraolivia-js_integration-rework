@@ -3,7 +3,7 @@ export function createLoadingIndicatorWedge() {
   const loadingIndicator = document.createElement('div');
   loadingIndicator.id = 'loading-indicator-wedge';
   loadingIndicator.style.display = 'none'; // Initially hidden
-  loadingIndicator.innerHTML = `<img src="assets/images/loading-indicator/wedge.gif" alt="Loading...">`;
+  loadingIndicator.innerHTML = `<img src="/assets/images/loading-indicator/wedge.gif" alt="Loading...">`;
   return loadingIndicator;
 }
 

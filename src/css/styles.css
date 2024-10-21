@@ -141,9 +141,8 @@ section {
   border-radius: 4px;
 }
 
-input::placeholder {
-  color: #888;
-  opacity: 1;
+input::placeholder, textarea::placeholder {
+  opacity: .8;
 }
 
 .payment-info form a {
@@ -1712,7 +1711,7 @@ aside img {
 
 .game-of-the-month {
   background-color: #020204;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }

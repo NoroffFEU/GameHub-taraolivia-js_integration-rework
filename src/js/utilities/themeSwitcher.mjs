@@ -10,7 +10,7 @@ export function applyTheme(theme, iconSrc) {
 
 export function setupThemeSwitcher() {
     const savedTheme = localStorage.getItem('theme') || 'light';
-    const savedIcon = localStorage.getItem('themeIcon') || 'default-icon.png';
+    const savedIcon = localStorage.getItem('themeIcon') || '/assets/images/icons/theme-icons/day.png';
     applyTheme(savedTheme, savedIcon);
 
     document.querySelectorAll('.theme-option').forEach(option => {
@@ -50,4 +50,3 @@ export function setupThemeSwitcher() {
         });
     }
 }
-
